@@ -9,6 +9,30 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-h1 {
+h1, h2, h3 {
+    text-align: center;
+    color :tomato;
+}
+
+p {
+    background-color:#fff;
+}
+
+/* pour cibler l'élément qui a l'id "travail" j'écris #travail : l'id vient toujours avec # avant */
+
+/* pour déclarer un id on précède le nom de 'lid du caractere dièse */
+
+#travail {
+    background-color: #000;
+    color: white;
+}
+
+/* pour cibler le/les éléments qui ont la class "vacances" j'écris .vacances : la class vient toujours avec . avant */
+
+/* pour déclarer une classe on precede le nom de la classe d'un point */
+
+.vacances {
+    font-style:  italic;
     color: blue;
+    font-style: italic;
 }
