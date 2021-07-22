@@ -1,0 +1,14 @@
+/* style pour l'exo 3 */
+
+body{
+    /* couleur de fond de l'élément */
+    background-color: pink;
+    /* couleur de caractères */
+    color: #333;
+    /* police des caractères - ici, des typo sans empattements ou sans-sérif ou une police bâton */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    color: blue;
+}

@@ -4,57 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cascading Style Sheet</title>
+    <title>Exo 1 - HTML & CSS</title>
 
-    <!-- lien externe vers la feuille de style 01_style.css -->
-    <link rel="stylesheet" href="01_style.css">
-
-    <!-- style dans l'en-tête : sur head -->
+   <!-- lien externe vers la feuille 01_style.css ; ce lien peut être commun à toutes les pages de mon site et me permet de centraliser les styles   -->
+   <link rel="stylesheet" href="css/01_style.css">
+   <!-- style dans l'en-tête  si j'ai du style dans l'en-tête c'est que sur cette page j'ai besoin des styles propres à cette page -->
     <style>
-        /* element { propiete : valeur;} */
-
-        /* body {
-            /* background-color: pink; */
-            color: purple;
-        } */
+        /* élement {propiété : valeur;}  */
+        /* body { background-color: cornsilk; }  */
 
         h1 {
-            background-color: springgreen;
-
+            background-color: tomato;
         }
 
         ul {
-            background-color: red;
+            background-color: yellow;
         }
 
         li {
-            background-color: yellow;
-            color:green;
+            background-color: whitesmoke;
+            color: green
         }
 
         a {
-            background-color: white;
+            background-color: whitesmoke;
             text-decoration: none;
         }
 
+        p {
+            background-color: mintcream;
+            color: green;
+        }
     </style>
+    
 </head>
 <body>
     <h1>CSS 3 - Feuille de style en cascade</h1>
 
-    <p>Il existe trois moyens de faire du style à l'aide du CSS :</p>
-    <!-- raccourcie pour faire la liste : ul>li*3{$/} -->
+    <p>Il existe 3 moyens de faire du style à l'aide du CSS :</p>
+    <!-- ul>li*3{$/} -->
     <ul>
-        <li style="color: blue;">1/ Le style en ligne (directement dans la balise)</li>
-        <!--  -->
+        <!-- et ce style au plus proche de l'élement sera une exception  -->
+        <li style="color: blue; ">1/ Le style en ligne</li>
         <li>2/ Le style dans l'en-tête (dans la balise <code>&lt;head&gt;</code>)</li>
-        <!--  -->
-        <li>3/ Le style dans une feuille de style externe.</li>
-        <!--  -->
+        <li>3/ Le style dans une feuille de style externe. </li>
     </ul>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, ad debitis maiores odit quas iusto similique omnis. Ipsa enim a corporis! Incidunt consequuntur, fuga voluptas dolorum reprehenderit enim aperiam iure.
-    <a href="#" title="Facilis" target="_blank">Facilis</a>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, nostrum maxime! Dicta at deleniti, unde ut aliquid, ad, vel harum dolore error dolorum cupiditate repudiandae enim dolores perspiciatis officiis ipsam.</p>
-    <p>Liens vers <a href="https://macbidouille.com">macbidouille</a></p>
+
+    <p style="font-family: cursive;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur assumenda, temporibus dolores esse quia tenetur cum dolorum laudantium fuga reprehenderit autem recusandae! Magnam explicabo nemo tempora, eligendi perspiciatis ducimus dolore! <a href="#" title="Facilis" target="_Blank">Facilis</a></p>
+    <p>lien vers <a href="https://www.rapidtables.com/web/color/Gold_Color.html">Colors</a></p>
+
+    <p>1/ COURRIER NEW : Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem animi, atque omnis perferendis, nesciunt optio sapiente molestias explicabo, dolores expedita ea! Laudantium sint non rem eaque iusto laboriosam at voluptates?</p>
+
+    <p id="times">2/ TIMES NEW ROMAN : Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime ad nesciunt eius ducimus reiciendis placeat deserunt? Doloribus nobis neque quis cupiditate possimus saepe, voluptatem consectetur necessitatibus blanditiis ab laborum dignissimos!</p>
 
 </body>
 </html>
