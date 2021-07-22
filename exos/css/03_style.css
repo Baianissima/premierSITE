@@ -9,6 +9,24 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+h1 {
+    /* taille de typo: en px en unités absolues = */
+    font-size: 50px;
+    text-transform: lowercase;
+}
+
+h2 {
+    font-size: 40px;
+    text-transform: uppercase; 
+    /* uppercase met tout le h2 en capitales/majuscules */
+}
+
+h3 {
+    font-size: 20px ;
+    /* text-transform: capitalize; */
+    /* capitalize mets chaque mot en majuscule */
+}
+
 h1, h2, h3 {
     text-align: center;
     color :tomato;

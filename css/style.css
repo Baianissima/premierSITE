@@ -1,0 +1,57 @@
+/* les styles pour le premierSITE Vanusa SAntos chantier Suresnes 2021-2022 */
+
+/* les typos Google Fonts utilisees dans le site : Anton (sans-serif), Oswald (sans -serif), Lemonada (manuscrite) */
+
+/* font-family:'Anton', sans-serif;
+    font-family:'Lemonada', sans-serif;
+    font-family:'Oswald', sans-serif;  */
+
+
+body {
+    background-color: aquamarine;
+    font-family:'Oswald', sans-serif;
+}
+
+/* les titres du site */
+
+h1 {
+    /* typo Google : */
+    font-family: 'Anton', sans-serif;
+    /* taille de typo */
+    font-size: 45px;
+    /* espacement entre les lettres */
+    letter-spacing: 1px;
+    /* couler réf. héxadécimal */
+    color: #29800b9;
+    text-align: center;
+}
+
+h2 {
+    font-size: 35px;
+    color: #2c3e50;
+    /* font-weight: = épaisseur des caractères , aussi par chiffre sans unités, bold= bolder */
+    font-weight: bolder;
+    /*text-shadow ou ombre portée : une proprieté qui a besoin de 1 ou plusieurs valeurs, voir details des valeurs sur site MDN : https://developer.mozilla.org/fr/docs/Web/CSS/text-shadow */
+    text-shadow: 1px 1px 2px #aaa;
+}
+
+/* taille de l'icone dans le h2 -- i est enfant de h2 -- l'icone sera 150% plus grand que la taille d'origine */
+
+h2 i {
+    font-size: 150%;
+}
+
+h3 {
+    font-size: 22px;
+    color: #2c3e50;
+    text-shadow:1px 1px 2px #aaa;
+}
+
+
+h4 {
+
+}
+
+blockquote {
+    font-family:'Lemonada', cursive;
+}
