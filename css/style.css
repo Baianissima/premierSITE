@@ -8,8 +8,12 @@
 
 
 body {
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     font-family:'Oswald', sans-serif;
+    /* image de fond */
+    /* chemin depuis le fichier style.css; on sort du dossier CSS puis on rentre dans le dossier img avec ../ le chemin pour sortir d'un dossier mettre toujours 2 POINTS pour sortir du dossier et rentrer dans un autre pour donner le chemin de l image */
+    background-image: url('../img/concrete-texture.png');
+    
 }
 
 /* les titres du site */
@@ -54,4 +58,12 @@ h4 {
 
 blockquote {
     font-family:'Lemonada', cursive;
+    font-size: 120%;
 }
+
+blockquote i {
+    font-size: 350%;
+    color:coral;
+    vertical-align: middle;
+}
+

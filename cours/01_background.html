@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01 background</title>
+    <!-- link ??? -->
+    <style>
+        body {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            /* background-image: url('../img/concrete-texture.png'); */
+
+            /* une image de fond, répétée ou non, sa position et sa taille */
+            /* background-image: url('../img/logo.png');
+            background-repeat: repeat-x;
+            background-position: center;
+            background-size: 40%; */
+
+            /* proprietés raccourcies : */
+            /* background est la proprieté raccourcie, qui accepte plusieurs valeurs (MDN "La propriété CSS background est une propriété raccourcie qui permet de définir les différentes valeurs des propriétés liées à la gestion des arrière-plans d'un élément (couleur, image, origine, taille, répétition, etc.)." https://developer.mozilla.org/fr/docs/Web/CSS/background#%3Cposition%3E */
+
+            background: url('../img/concrete-texture.png');
+           
+        }
+        
+        main {
+            margin: 0 auto;
+            /* margin : auto seul fait le même effet de centrer MAIN dans BODY --- margin 0 auto va centrer horizontalement l element dans son parent */
+            width: 1100px;
+            /* width : largeur de l'element */
+            padding: 50px;
+            /* padding est la marge intérieur rajoutée au block, et ça augmente sa taille originale, il faut compter les deux cotés = 50pxx é = 100px */
+            border: 10px solid yellow;
+            background: linear-gradient(red, blue);
+                        
+        }
+
+        
+        h1 {
+            width: 1100px;
+            background-color: lightgrey;
+            letter-spacing: 2px; 
+            text-align: center;
+            /* letter-spacing pour donner des espaces entres les lettres du titre  */
+        }
+
+        h2 {
+            width: 800px;
+            background-color: lightblue;
+            /* color: lightseagreen; */
+        }
+
+        p {
+            background-color: rgb(66, 238, 23);
+        }
+
+        a {
+            background-color: orange;
+            color:white;
+            border: 1px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Background image</h1>
+        <p><strong>Apprendre à rajouter des <strong>backgrounds<p>
+        <h2>et un titre de niveau 2</h2>
+        <del>02_element in line</del>
+        
+        <br><br><br><br><br><br><br><br><br><br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores officia vel adipisci ad illo consectetur quia, magni dolor, recusandae eius magnam id. Delectus explicabo adipisci quam soluta molestias excepturi saepe.
+    Velit eaque qui dolorum laudantium asperiores totam illo consequuntur rerum cumque nihil est et reiciendis earum, ullam soluta accusamus eius facere error ratione? Odio aspernatur quasi veniam, laboriosam quod voluptatem?
+    <span>Illo, possimus quidem consequatur impedit deserunt et cumque ad in veritatis, atque animi praesentium commodi! Sapiente inventore minima exercitationem, quo alias nihil veniam quia dolore ipsa fugit, laboriosam pariatur nobis.</span>
+    Autem eius ipsam maxime veniam laudantium voluptatibus rerum ducimus, repellat nisi tenetur, magnam enim? Ducimus distinctio obcaecati fuga exercitationem debitis adipisci non soluta repellendus temporibus inventore, pariatur impedit labore atque?
+    <a href="https://developer.mozilla.org/fr/docs/Web/CSS/border">Border sur MDN</a>
+    Quidem, recusandae? Distinctio nisi qui voluptates iste suscipit molestias. Commodi, eius quam expedita debitis veritatis officiis possimus unde nobis iste autem nemo ad accusamus consectetur! Deleniti maxime laudantium dignissimos odio!
+    Quidem enim dolores officia nihil laboriosam odit facilis error ex autem. Optio sint rem accusamus saepe doloremque consectetur temporibus aspernatur sit inventore velit autem animi modi, maxime, quos voluptatibus pariatur!
+    Reiciendis quas dolore laborum dolores nostrum doloremque. Sunt, odit rerum optio sint tempore ex perspiciatis beatae eveniet asperiores assumenda unde incidunt, possimus qui veritatis pariatur quibusdam, voluptates maxime iusto dolor?
+    Dicta ullam a nihil quos saepe nobis tempore voluptatem rerum dolorum, deserunt voluptatum expedita maxime! Earum vitae dolorum rerum repellendus. Ad dolorum vero, velit natus repellendus quas accusamus quam culpa.
+    Voluptates dignissimos libero quod distinctio, voluptate eveniet quis modi sint deserunt repellat, in nihil. Dicta qui veritatis aliquid nostrum quae provident. Nihil qui natus aperiam unde sint quaerat molestiae soluta?
+    Facere repellendus ab cupiditate culpa ad nisi modi cum beatae consequuntur animi sit ducimus eveniet quia non nihil, a soluta! Nulla amet ducimus labore eum molestias vitae commodi, cupiditate odit!</p>
+    </main>
+    
+</body>
+</html>

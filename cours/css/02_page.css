@@ -1,0 +1,37 @@
+/* feuille de style pour la page sur l'Espagne */
+
+body {
+    background-image: url('../../img/concrete-texture.png')
+}
+/*  pour sortir d'un dossier pour retrouver une image il faut faire ../ et pour sortir 2 fois il faut faire ../../
+ICI, 02_pages.cc sort de CSS, donc on met ../ et puis il sort de COURS, donc on met une 2e fois ../, donc on sort 2 fois pour arriver au dossier IMG sur la racine    */
+
+
+header {
+    background-color: olive;
+}
+
+nav {
+    background-color: cornflowerblue;
+}
+
+main {
+    background-color: rgb(20, 220, 210);
+    width: 1200px;
+}
+
+footer {
+    background-color: ghostwhite;
+}
+
+h2 {
+    background-color: lightblue;
+}
+
+article {
+    background-color: #fff;
+}
+
+aside {
+    background-color: lightgrey;
+}
