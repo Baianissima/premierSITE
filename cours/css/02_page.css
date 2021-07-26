@@ -1,11 +1,41 @@
-/* feuille de style pour la page sur l'Espagne */
+/* site d Eric Meyer avec le code CSS pour reset simple a copier/coller en debut de chaque code CSS : https://meyerweb.com/eric/tools/css/reset/ */
+
+@charset "UTF-8";
+
+/* debut reset simple d'Eric Meyer  */
+/* l'étoile signifie tout all */
+*{
+    box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* fin reset simple d'Eric Meyer  */
 
 body {
     background-image: url('../../img/concrete-texture.png')
 }
+
 /*  pour sortir d'un dossier pour retrouver une image il faut faire ../ et pour sortir 2 fois il faut faire ../../
 ICI, 02_pages.cc sort de CSS, donc on met ../ et puis il sort de COURS, donc on met une 2e fois ../, donc on sort 2 fois pour arriver au dossier IMG sur la racine    */
-
 
 header {
     background-color: olive;
@@ -15,13 +45,26 @@ nav {
     background-color: cornflowerblue;
 }
 
+/* a {
+    background-color: ;
+} */
+
 main {
-    background-color: rgb(20, 220, 210);
+    background-color: white;
     width: 1200px;
+    margin: 0 auto;
+    height: 600px;
 }
 
 footer {
-    background-color: ghostwhite;
+    /* background-color: ghostwhite; */
+    /* color: white; */
+}
+
+h1 {
+    text-align: center;
+    background-color: cornflowerblue;
+    font-size: 200%;
 }
 
 h2 {
@@ -29,9 +72,34 @@ h2 {
 }
 
 article {
-    background-color: #fff;
+   
+    width: 800px;
+    float: left;
 }
 
 aside {
-    background-color: lightgrey;
+    width: 400px;
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+#menu-haut {
+    width: 1200px ;
+    margin: 0 auto;
+}
+/* auto pour autocentrer le menu/nav, il reste sur meme direction de main, reste a gauche */
+
+#menu-haut ul {
+    background-color:red;
+    width: 800px;
+    float: left;
+}
+
+form {
+    background-color: red;
+    width: 400px;
+    float: left;
 }
