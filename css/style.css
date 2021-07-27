@@ -3,166 +3,162 @@
 /* les typos Google Fonts utilisees dans le site : Anton (sans-serif), Oswald (sans -serif), Lemonada (manuscrite) */
 
 /* font-family:'Anton', sans-serif;
-    font-family:'Lemonada', sans-serif;
-    font-family:'Oswald', sans-serif;  */
+font-family:'Lemonada', sans-serif;
+font-family:'Oswald', sans-serif;  */
 
-    /* debut reset */
+/* debut reset */
 
-    @charset "UTF-8";
+@charset "UTF-8";
 
-    /* reset simple  */
-    /* l'étoile/astérisque signifie tout all */
-    /* sinon on eut utiliser le reset d'Eric Meyer qui se trouve à cette adresse: http://meyerweb.com/eric/tools/css/reset/  */
-    *{
-        box-sizing: border-box;
-    }
-    html, body, div, span, applet, object, iframe,
-    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-    a, abbr, acronym, address, big, cite, code,
-    del, dfn, em, img, ins, kbd, q, s, samp,
-    small, strike, strong, sub, sup, tt, var,
-    b, u, i, center,
-    dl, dt, dd, ol, ul, li,
-    fieldset, form, label, legend,
-    table, caption, tbody, tfoot, thead, tr, th, td,
-    article, aside, canvas, details, embed,
-    figure, figcaption, footer, header, hgroup,
-    menu, nav, output, ruby, section, summary,
-    time, mark, audio, video {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        font-size: 100%;
-        font: inherit;
-        vertical-align: baseline;
-    }
+/* reset simple  */
+/* l'étoile/astérisque signifie tout all */
+/* sinon on eut utiliser le reset d'Eric Meyer qui se trouve à cette adresse: http://meyerweb.com/eric/tools/css/reset/  */
+* {
+    box-sizing: border-box;
+}
 
-    /* fin reset simple */
-    /* les typos goole font utilisees das le site */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
 
+/* fin reset simple */
+/* les typos goole font utilisees das le site */
 
 body {
-    /* background-color: aquamarine; */
-    font-family:'Oswald', sans-serif;
-    /* image de fond */
-    /* chemin depuis le fichier style.css; on sort du dossier CSS puis on rentre dans le dossier img avec ../ le chemin pour sortir d'un dossier mettre toujours 2 POINTS pour sortir du dossier et rentrer dans un autre pour donner le chemin de l image */
-    background-image: url('../img/concrete-texture.png');
+/* background-color: aquamarine; */
+font-family:'Oswald', sans-serif;
+/* image de fond */
+/* chemin depuis le fichier style.css; on sort du dossier CSS puis on rentre dans le dossier img avec ../ le chemin pour sortir d'un dossier mettre toujours 2 POINTS pour sortir du dossier et rentrer dans un autre pour donner le chemin de l image */
+background-image: url('../img/concrete-texture.png');
 }
 
 /* les titres du site */
 
 /* nav {
-    background-color: aqua;
-    margin: 0 auto;
+background-color: aqua;
+margin: 0 auto;
 } */
 
 /* main {
-    background-color: whitesmoke;
-    margin: 0 auto;
+background-color: whitesmoke;
+margin: 0 auto;
 } */
 
 h1 {
-    /* typo Google : */
-    font-family: 'Anton', sans-serif;
-    /* taille de typo */
-    font-size: 40px;
-    /* espacement entre les lettres */
-    letter-spacing: 1px;
-    /* couler réf. héxadécimal */
-    color: #2980b9;
-    text-align: center;
+/* typo Google : */
+font-family: 'Anton', sans-serif;
+/* taille de typo */
+font-size: 40px;
+/* espacement entre les lettres */
+letter-spacing: 1px;
+/* couler réf. héxadécimal */
+color: #2980b9;
+text-align: center;
 }
 
-
 h2 {
-    font-size: 35px;
-    color: #2c3e50;
-    /* font-weight: = épaisseur des caractères , aussi par chiffre sans unités, bold= bolder */
-    font-weight: bolder;
-    /*text-shadow ou ombre portée : une proprieté qui a besoin de 1 ou plusieurs valeurs, voir details des valeurs sur site MDN : https://developer.mozilla.org/fr/docs/Web/CSS/text-shadow */
-    text-shadow: 1px 1px 2px #aaa;
+font-size: 35px;
+color: #2c3e50;
+/* font-weight: = épaisseur des caractères , aussi par chiffre sans unités, bold= bolder */
+font-weight: bolder;
+/*text-shadow ou ombre portée : une proprieté qui a besoin de 1 ou plusieurs valeurs, voir details des valeurs sur site MDN : https://developer.mozilla.org/fr/docs/Web/CSS/text-shadow */
+text-shadow: 1px 1px 2px #aaa;
 }
 
 /* la taille de l icone dans h2 */
 /* taille de l'icone dans le h2 -- i est enfant de h2 -- l'icone sera 150% plus grand que la taille d'origine */
 
 h2 i {
-    font-size: 150%;
+font-size: 150%;
 }
 
-
 h3 {
-    font-size: 22px;
-    color: #2c3e50;
-    text-shadow:1px 1px 2px #aaa;
+font-size: 22px;
+color: #2c3e50;
+text-shadow:1px 1px 2px #aaa;
 }
 
 h4 {
-    text-align: center;
+text-align: center;
 }
 
 blockquote {
-    font-family:'Lemonada', cursive;
-    font-size: 120%;
+font-family:'Lemonada', cursive;
+font-size: 120%;
 }
 
 blockquote i {
-    font-size: 350%;
-    color:coral;
-    vertical-align: middle;
+font-size: 350%;
+color:coral;
+vertical-align: middle;
 }
 
 /* A compléter position */
 
 /* Header dans la page Index */
-
 header {
-    height: 175px;
-    background-color: #719bc5;
+height: 175px;
+background-color: #719bc5;
 }
 /* dans le header, les trois zones suivantes flottes toutes les trois à gauche, elles ont une largeur en %, donc une largeur relatives à l'element parent doc header */
 
 /* la proprieté float sert à casser le fluxdu html */
-
 #logo {
-    /* la boite */
-    width: 25%;
-    float: left;
-    padding: 15px;
-    /* padding = marge interieure de l element / padding = rembourrage/capitonage/mettre le matelassé en anglais */
-    /* l aspect de la boite/element */
-    background-color: #719bc5;
-    /* le text */
-    text-align: center;
+/* la boite */
+width: 25%;
+float: left;
+padding: 15px;
+/* padding = marge interieure de l element / padding = rembourrage/capitonage/mettre le matelassé en anglais */
+/* l aspect de la boite/element */
+background-color: #719bc5;
+/* le text */
+text-align: center;
 }
 
 #slogan {
-    width: 50%;
-    float: left;
-    padding-top: 50px;
-    background-color: #719bc5;
+width: 50%;
+float: left;
+padding-top: 50px;
+background-color: #719bc5;
 }
 
 #social {
-    width: 25%;
-    float: left;
-    background-color: #719bc5;
+width: 25%;
+float: left;
+background-color: #719bc5;
 }
 
 #social i {/* ici on cible un element i dont le parent à l'id "social"/
-    
-    /* le change la nature de i qui est de type inline, en un element de type block */
-    display: block;
-    padding: 15px 30px 0 0;
 
-    font-size: 30px;
-    text-align: right;
+/* le change la nature de i qui est de type inline, en un element de type block */
+display: block;
+padding: 15px 30px 0 0;
+
+font-size: 30px;
+text-align: right;
 }
 
 /* la classe clear pour retablir le flux */
 
 .class {
-    clear: both;
+clear: both;
 }
 
 /* ce lundi 26/07 on a fait du reset sur css, class clear et flaot pour mettre les elements du header cote a cote  */
@@ -170,79 +166,92 @@ header {
 /* ici sur HEADER A, la lecture est: "tous les liens à lecture du header sont non-soulignés" */
 
 header a {
-    text-decoration: none;
-    color: #10828c;
+text-decoration: none;
+color: #10828c;
 }
 /* fin header */
 
 /* la nav, la navigation */
-
 nav {
-    
-    height: 70px;
-    padding: 15px;
+height: 70px;
+padding: 15px;
 
-    background-color: #2980b9;
-    border-bottom: 8px solid #6acafc;
-    /* border-bottom : une bordure en bas */
+background-color: #2980b9;
+border-bottom: 8px solid #6acafc;
+/* border-bottom : une bordure en bas */
 
-    text-align: center;
+text-align: center;
 }
 
-
 nav a {
-    /* ici les proprietes et valeurs liées a l espacement */
-    margin: 10px;
-    padding: 2px 10px;
+/* ici les proprietes et valeurs liées a l espacement */
+margin: 10px;
+padding: 2px 10px;
 
-    /* ici les infos liees l aspect : marges et couleurs */
-    background-color: #6acafc;
-    border: 2px solid #fff;
-    border-radius: 10px 0px;
-    /* border-radius arrondi les angles de bordure */
-    /* https://css3generator.com/ */
+/* ici les infos liees l aspect : marges et couleurs */
+background-color: #6acafc;
+border: 2px solid #fff;
+border-radius: 10px 0px;
+/* border-radius arrondi les angles de bordure */
+/* https://css3generator.com/ */
 
-    /* ici tout lies aux textes */
-    font-family: 'Oswald', sans-serif;
-    color: 2c3e50;
-    text-decoration: none;
-    font-size: 16x;
-    /* ici transition pour controler la duree sur l envol en changement de couleur de nav a:hover */
-    transition: 0.5s;
+/* ici tout lies aux textes */
+font-family: 'Oswald', sans-serif;
+color: #2c3e50;
+text-decoration: none;
+font-size: 16x;
+/* ici transition pour controler la duree sur l envol en changement de couleur de nav a:hover */
+transition: 0.5s;
 }
 
 /* sur "nav a:hover" permet de changer l 'aspect du survol du lien, c est une pseudo classe, ça change de couleur */
 
 nav a:hover {
-    /* a :hover  est un pseudo-class, un effet au survol du curseur, rajouté pour faire marcher avec nav s*/
-    background-color: #a6d6c3;
-    color:#fff;
+/* a :hover  est un pseudo-class, un effet au survol du curseur, rajouté pour faire marcher avec nav s*/
+background-color: #a6d6c3;
+color:#fff;
 }
-
 /* fin nav */
 
 /* les zones principales a partir d ici : */
-
 main {
-    width: 1000px;
-    margin: 0 auto;
-    /* une couleur en rgba : red green bleu et avec un canal "alpha" on joue sur la transparence de la couleur rgb */
-    background: rgba(178, 178, 178, 0.178);
+width: 1100px;
+margin: 0 auto;
+/* une couleur en rgba : red green bleu et avec un canal "alpha" on joue sur la transparence de la couleur rgb - l opacote de la couleru */
+background: rgba(178, 178, 178, 0.178);
 }
 
 aside {
-    height: 250px;
-    width: 30%;
-    float: left;
-    background-color: #a6d6c3;   
+height: 250px;
+width: 30%;
+float: left;
+background-color: #a6d6c3;   
 }
 
-/* la classe clear pour rétablier le flux */
+#accueil {
+width: 70%;
+float: left;
+}
 
+section {
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+/* la class clear pour rétablier le flux */
 .clear {
-    clear: both;
- }                                                                                        
- 
- /* site à utiliser pour verifier infos des formes en px et visualiser notre choix de la forme/mesures :  https://css3generator.com/ */
+clear: both;
+}          
 
- /* site pour fabriquer un navigateur indiqué par Patrick : https://css3generator.com/ */
+footer {
+    height: 50px;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #2980b9;  
+
+    text-align: center;
+    color: #fff;  
+}
+/* site à utiliser pour verifier infos des formes en px et visualiser notre choix de la forme/mesures :  https://css3generator.com/ */
+
+/* site pour fabriquer un navigateur indiqué par Patrick : https://css3generator.com/ */
