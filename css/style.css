@@ -1,4 +1,4 @@
-/* les styles pour le premierSITE Vanusa SAntos chantier Suresnes 2021-2022 */
+/* les styles pour le premierSITE Vanusa Santos chantier Suresnes 2021-2022 */
 
 /* les typos Google Fonts utilisees dans le site : Anton (sans-serif), Oswald (sans -serif), Lemonada (manuscrite) */
 
@@ -10,7 +10,7 @@ font-family:'Oswald', sans-serif;  */
 
 @charset "UTF-8";
 
-/* reset simple  */
+/* ICI on utilise le RESET SIMPLE, non celui d Eric Meyer, qui est plus poussé  */
 /* l'étoile/astérisque signifie tout all */
 /* sinon on eut utiliser le reset d'Eric Meyer qui se trouve à cette adresse: http://meyerweb.com/eric/tools/css/reset/  */
 * {
@@ -50,11 +50,6 @@ background-image: url('../img/concrete-texture.png');
 }
 
 /* les titres du site */
-
-/* nav {
-background-color: aqua;
-margin: 0 auto;
-} */
 
 /* main {
 background-color: whitesmoke;
@@ -99,14 +94,18 @@ h4 {
 text-align: center;
 }
 
+p {
+    padding: 5px;
+}
+
 blockquote {
 font-family:'Lemonada', cursive;
-font-size: 120%;
+font-size: 80%;
 }
 
 blockquote i {
 font-size: 350%;
-color:coral;
+color:#6acafc;
 vertical-align: middle;
 }
 
@@ -212,6 +211,12 @@ nav a:hover {
 background-color: #a6d6c3;
 color:#fff;
 }
+
+.active {
+    background-color: #a6d6c3;
+    color: orangered;
+}
+
 /* fin nav */
 
 /* les zones principales a partir d ici : */
@@ -256,3 +261,131 @@ footer {
 /* site à utiliser pour verifier infos des formes en px et visualiser notre choix de la forme/mesures :  https://css3generator.com/ */
 
 /* site pour fabriquer un navigateur indiqué par Patrick : https://css3generator.com/ */
+
+/* FIN DES ZONES PRINCIPALES DE LA PAGE */
+
+button {
+    position: fixed;
+    /* le bouton est fixé  */
+    bottom: 40px;
+    /* à 40px du bas de la page ge */
+    right: 20px;
+    /* et à 20px de la droite de la page */
+
+    border: none;
+    /* le bouton n'pas pas de bordure */
+    background: transparent;
+    /* il est transparent */
+
+    font-size: 350%;
+    color: #2c3e50;
+}
+
+/* La page séclecteur */
+
+.selection p {
+    margin-bottom: 5px;
+
+    color: greenyellow;
+    background-color: orchid;
+}
+
+.selection p:first-of-type {
+    background-color: hotpink;
+    /* 1er enfant du type désigné = le type c'est P, ici on designe que le 1er paragraphe change de couleur */
+}
+
+
+.selection p:last-of-type {
+    background-color: hotpink;
+    /* dernier enfant du type désigné = le type c'est P, ici on designe que le dernier paragraphe change de couleur */
+    width: 300px;
+}
+
+.selection p:nth-of-type(4), p:nth-of-type(6) {
+    background: black;
+    color: white;
+    /* nth en anglais veut dire que c'est le énième du type désigné = désinger par numero ordinal */
+}
+ 
+/* .selection *:last-child {
+    /* etoile/asterisque signifie "tout"/"all" et nos ciblons ici les derniers enfants des éléments qui sont dans la section */
+    /* font-size: 100px
+} */ */
+
+.selection .zone-a {
+    color: purple;
+
+}
+
+.selection .zone-b {
+    color: royalblue;
+}
+
+/* .selection div:not(.zone-b) {
+    border-color: white;
+    font-size: 68px;
+    /* ici, on aplique à toutes les div sauf la zone-b ???? */
+/* } */ */
+
+.selection div:not(.zone-b) {
+    background-color: red;
+    font-size: 68px;
+}
+
+.selection .zone-b .texte-orange {
+    font-size: 35px;
+    color:orangered;
+}
+
+selection #zone-d span {
+    color: #32ff32;
+    font-size: 30px;
+    font-style: italic;
+}
+
+/* fin page des sélecteurs */
+
+/* page des images */
+
+.img-fond {
+    margin-bottom: 20px;
+    background: #000 url('../img/fond.jpg') no-repeat;
+    background-size: cover;
+    /* avec COVER, l'image prend toute la largeur et le fond NOIR est couvert */
+}
+
+.img-fond p {
+    width: 75%;
+    margin: 200px auto 250px auto;
+    padding: 20px;
+
+    background: rgba(255,255,255, 0.60) ;
+    border-radius: 50px;
+    font-size: 120%;
+}
+
+/* ici avec les crochets on ne CIBLE que cette image, on la trouve par son chemin dans le fichier html */
+img[src="img/toureiffel.jpg"] {
+    display: block;
+    /* je change la nature de l'élément inline en block pour pour lui, ici ça met l image de la tour au centre, avec des bords, l element inline passe en block grâce à DISPLAY */
+    padding: 20px;
+    margin:auto;
+    /* margin-auto ne marche que sur element block */
+    background-color:#fff ;
+}
+
+/* REPRENDRE ICI VENDREDI 30/07 */
+
+
+ 
+
+
+
+
+
+/* la classe clear pour rétablier le flux */
+.clear {
+    clear: both;
+}
+

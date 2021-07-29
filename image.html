@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- La description : phrase qui s'affiche et décrit le site dans un résultat de moteur de recherche.
+            Cette balise, parmi d'autres, sera utile au référencement naturel -->
+    <meta name="description" content="Site d'apprentissage du HTML 5 et du CSS 3 - Colombbus Suresnes 2021">
+
+    <!-- les mots-clés, utiles pour les moteurs de recherche, bien moins utilisés de nos jours... -->
+    <meta name="keywords" content="Premier site, Colombbus, Suresnes, l'agence Suresnes, HTML 5, CSS 3,
+            Vanusa Santos, Vanusa, intégratrice Web, développeuse Web, Colombbus Suresnes">
+
+    <!-- L'auteur de la page -->
+    <meta name="author" content="Vanusa Santos">
+
+    <title>Image - Mon premier site en HTML 5 et en CSS 3 </title>
+    <!-- à compléter, feuille de style CSS, typologie etc. -->
+
+    <!-- les Google Fonts Anton, Lemonada et Oswald - link de l ensemble de polices recuperer sur le site Google Fonts et colé ici -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lemonada&family=Oswald&display=swap"
+        rel="stylesheet">
+
+    <!-- feuille de style de MON PREMIER SITE : cette balise LINK sert à relier HTML au CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- nous chargeons en CDN (Content Delivery Nerwork) la typo font awesome, la version gratuite, qui comporte 1600 icônes -->
+    <!-- FontAwesomeTypos -->
+    <script src="https://kit.fontawesome.com/a1a0ce4d00.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--en-tête de la page-->
+    <header>
+        <div id="logo">
+            <!-- Le bouton et le lien vers l'ancre #logo -->
+            <a href="#logo">
+                <button type="button"><i class="fas fa-arrow-circle-up"></i></button>
+            </a>
+            <img src="img/logo.png" alt="logo html 5 et css 3">
+        </div>
+
+        <div id="slogan">
+            <a href="index.html">
+                <h1>Mon premier site en HTML 5 et en CSS 3</h1>
+            </a>
+        </div>
+
+        <div id="social">
+            <a href="http://www.instagram.com/lagencesuresnes/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
+        </div>
+
+        <div class="clear"></div>
+    </header>
+    <!-- fin header-->
+
+    <!-- navigation principale -->
+    <nav>
+        <div>
+            <!-- zone du menu avec des liens simples pour faire notre menu -->
+            <a href="index.html" title="HTML 5 CSS 3 - Accueil">Accueil</a>
+            <a href="texte.html" title="HTML 5 CSS 3 - Texte">Texte</a>
+            <a href="selecteur.html" title="HTML 5 CSS 3 - Selecteur">Sélécteur</a>
+            <a href="image.html" title="HTML 5 CSS 3 - Image" class="active">Image</a>
+            <a href="position.html" title="HTML 5 CSS 3 - Position">Position</a>
+            <a href="zoning.html" title="HTML 5 CSS 3 - Zoning">Zoning</a>
+            <a href="tableau.html" title="HTML 5 CSS 3 - Tableau">Tableau</a>
+            <a href="liste.html" title="HTML 5 CSS 3 - Liste">Liste</a>
+            <a href="lien.html" title="HTML 5 CSS 3 - Lien">Lien</a>
+            <a href="formulaire.html" title="HTML 5 CSS 3 - Formulaire ">Formulaire</a>
+            <a href="multimedia.html" title="HTML 5 CSS 3 - Multimédia">Multimédia</a>
+            <a href="animation.html" title="HTML 5 CSS 3 - Animation">Animation</a>
+            <a href="recapitulatif.html" title="HTML 5 CSS 3 - Récapitulatif">Récapitulatif</a>
+        </div>
+    </nav>
+    <!-- fin de la nav -->
+
+    <main>
+        <!-- section 1 -->
+        <section>
+            <h2>Les images - <i class="fas fa-image"></i></h2>
+        </section>
+
+        <!-- section 2 -->
+        <section class="img-fond">
+            <h3>Une image de fond en CSS - <i class="fas fa-comment-alt"></h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum alias doloremque suscipit deleniti vitae fuga saepe doloribus, voluptate est sit quae enim. Similique ullam, non amet eius accusantium deserunt doloribus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae minus adipisci, quisquam sit earum magni, porro officia optio repellat dolore explicabo dolor nemo amet quas laborum? Ullam reprehenderit nisi mollitia!</p>
+        </section>
+
+        <!-- section 3 -->
+        <section>
+            <h3>Image dans le html</h3>
+            <img src="img/toureiffel.jpg" alt="la tour Eiffel" title="Une belle iamge de la tour Eiffel">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa rerum architecto officiis accusantium nam, necessitatibus fugiat repellendus dolorum est corporis enim, veritatis molestias hic omnis quidem aut! Ducimus, minima obcaecati! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut consectetur eaque doloremque asperiores, perspiciatis accusantium facere architecto quas dolores aliquid, cum ab iusto nisi praesentium optio nemo debitis aut eligendi.</p>
+        </section>
+     
+    </main>
+
+    <!-- pied de page-->
+    <footer>
+        <!-- pour les aracteres spécieux nous avons besoin de les coder cf. http://dev.w3.org/html5-author/charref -->
+        <p>&copy; L'agence Suresnes 2021</p>
+    </footer>
+    <!--fin footer-->
+
+
+</body>
+
+</html>
