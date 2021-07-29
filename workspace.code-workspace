@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "img",
+			"path": "../training/img"
+		},
+		{
+			"name": "training",
+			"path": "../training/training"
+		}
+	],
+	"settings": {}
+}
