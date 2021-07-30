@@ -17,7 +17,7 @@
     <!-- L'auteur de la page -->
     <meta name="author" content="Vanusa Santos">
 
-    <title>Image - Mon premier site en HTML 5 et en CSS 3 </title>
+    <title>Tableau - Mon premier site en HTML 5 et en CSS 3 </title>
     <!-- à compléter, feuille de style CSS, typologie etc. -->
 
     <!-- les Google Fonts Anton, Lemonada et Oswald - link de l ensemble de polices recuperer sur le site Google Fonts et colé ici -->
@@ -67,10 +67,10 @@
             <a href="index.html" title="HTML 5 CSS 3 - Accueil">Accueil</a>
             <a href="texte.html" title="HTML 5 CSS 3 - Texte">Texte</a>
             <a href="selecteur.html" title="HTML 5 CSS 3 - Selecteur">Sélécteur</a>
-            <a href="image.html" title="HTML 5 CSS 3 - Image" class="active">Image</a>
+            <a href="image.html" title="HTML 5 CSS 3 - Image">Image</a>
             <a href="position.html" title="HTML 5 CSS 3 - Position">Position</a>
             <a href="zoning.html" title="HTML 5 CSS 3 - Zoning">Zoning</a>
-            <a href="tableau.html" title="HTML 5 CSS 3 - Tableau">Tableau</a>
+            <a href="tableau.html" title="HTML 5 CSS 3 - Tableau" class="active">Tableau</a>
             <a href="liste.html" title="HTML 5 CSS 3 - Liste">Liste</a>
             <a href="lien.html" title="HTML 5 CSS 3 - Lien">Lien</a>
             <a href="formulaire.html" title="HTML 5 CSS 3 - Formulaire ">Formulaire</a>
@@ -82,36 +82,53 @@
     <!-- fin de la nav -->
 
     <main>
-        <!-- section 1 -->
-        <section>
-            <h2>Les images - <i class="fas fa-image"></i></h2>
+        <section class="tableau">
+            <h2>Un tableau - <i class="fas fa-table"></i></h2>
+            <table>
+                <!-- table tableau -->
+                <!-- Caption c'est la légende du tableau -->
+                <caption><i class="fas fa-plane"></i>Vols -> Paris Rome</caption>
+                <!-- ici <thead> est l en-tête du tableau, les en-têtes de colonnes -->
+                <thead>
+                    <!-- ici c est une TABLE ROW : les rangées de tableaux -->
+                    <tr>
+                        <!-- TD = Table Data, les donneés du tableau, les cellules - le nombre de cellules donne le nombre de colonnes du tableau -->
+                        <td>Jours</td>
+                        <td>Lundi</td>
+                        <td>Mardi</td>
+                        <td>Dimanche</td>
+                    </tr>
+                </thead>
+                <!-- ici TBODY est el corp du tableau -->
+                <tbody>
+                    <!-- tr*4>td*4 -->
+                    <tr>
+                        <!-- rowspan fait fusionner la cellule de cette rangée avec celle du dessous -->
+                        <td rowspan="2">Air France</td>
+                        <td>Départ 10 h - Arrivée 11 h 55</td>
+                        <td>Départ 15 h - Arrivée 17 h 55</td>
+                        <td>Départ 17 h - Arrivée 19 h 55</td>
+                    </tr>
+                    <tr>
+                        <!-- j'enleve le premier TD car ce TD fusionne avec le TD du dessus -->
+                        <td> 180 € </td>
+                        <td> 200 € </td>
+                        <td> 250 € </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Alitalia</td>
+                        <td>Départ 8 h - Arrivée 10 h</td>
+                        <td>Départ 17 h - Arrivée 18 h</td>
+                        <td>Départ 19 h - Arrivée 21 h</td>
+                    </tr>
+                    <tr>
+                        <td> 180 € </td>
+                        <td> 200 € </td>
+                        <td> 250 € </td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
-
-        <!-- section 2 -->
-        <section class="img-fond">
-            <h3>Une image de fond en CSS - <i class="fas fa-comment-alt"></h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum alias doloremque suscipit deleniti vitae fuga saepe doloribus, voluptate est sit quae enim. Similique ullam, non amet eius accusantium deserunt doloribus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae minus adipisci, quisquam sit earum magni, porro officia optio repellat dolore explicabo dolor nemo amet quas laborum? Ullam reprehenderit nisi mollitia!</p>
-        </section>
-
-        <!-- section 3 -->
-        <section>
-            <h3>Image dans le html</h3>
-            <img src="img/toureiffel.jpg" alt="la tour Eiffel" title="Une belle iamge de la tour Eiffel">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa rerum architecto officiis accusantium nam, necessitatibus fugiat repellendus dolorum est corporis enim, veritatis molestias hic omnis quidem aut! Ducimus, minima obcaecati! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut consectetur eaque doloremque asperiores, perspiciatis accusantium facere architecto quas dolores aliquid, cum ab iusto nisi praesentium optio nemo debitis aut eligendi.</p>
-        </section>
-
-        <!-- section 4 -->
-
-        <section class="au-centre">
-            <h3>Images dans le HTML avec des effets css</h3>
-            <img src="img/golden_gate.jpg" alt="le golden gate bridge" class="img-golden">
-            <img src="img/golden_gate.jpg" alt="le golden gate bridge" class="img-golden">
-            <blockquote>Et pourtant elle tourne !</blockquote>
-            <img src="img/golden_gate.jpg" alt="le golden gate bridge" class="img-golden rotation-360">
-
-            <!-- ici on a mis 2 classes pour la 3e image : img-golden + rotation-360 -->
-        </section>
-     
     </main>
 
     <!-- pied de page-->
