@@ -466,7 +466,77 @@ li .far {
     color: #2D5C7F;
 }
 
-li .far:hover {
+li.far:hover {
+    /* lecture ici : c'est un li qui contient un element dont la class est far */
     font-size: 150%;
     color: blue;
+}
+
+ol.fruit-2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    list-style-type: upper-roman;
+}
+
+/* ci-dessous on a : une classe (.imbriquee) + un element dans la classe (.imbriquee ul) */
+.imbriquee, .imbriquee ul {
+    padding-left: 40px;
+}
+
+.imbriquee {
+    cursor: pointer;
+    /* cursor: pointer = faire apparaitre la MAIN comme courseur */
+}
+
+.imbriquee ul {
+    display: none;
+    /* ici on dit "non-afficher" les puces */
+}
+
+.affiche:hover ul {
+    display: block;
+}
+
+/* Avec  .imbriquee li ul li:hover nous ciblons les li (au survol de la souris) qui sont dans une ul; imbriquée dans des li, eux-mêmes enfants d'un élément qui a la classe "imbriquée" */
+
+.imbriquee li ul li:hover {
+    display: inline;
+    font-size: 200%;
+    background-color: #6acafc;
+    box-shadow: 5px 10px 10px grey;
+    transition-duration: 1.5s;
+
+    /* css3generateur.com = site pour voir comment on fait une box-shadow */
+}
+
+/* fin page liste */
+
+
+
+/* page des liens */
+/* Les ancres en haut de page */
+.ancre {
+    text-align: center;
+    padding: 100px;
+}
+
+.ancre a {
+    margin: 8px;
+    padding: 5px 10px;
+
+    background: #2c3e50;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 3px black;
+
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* ici le box-shadow: none sur .ancre a:hover fait disparaitre l'ombre au survol de la souris */
+
+.ancre a:hover {
+    box-shadow: none;
+    text-shadow: 1px 5px 10px rgb(243, 12, 70);
+    transition-duration: 0.5s;
 }

@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Site d'apprentissage du HTML 5 et du CSS 3 - Colombbus Suresnes 2021">
-	<meta name="keywords" content="Premier site, Colombbus, Suresnes, l'agence Suresnes, HTML 5, CSS 3,
+    <meta name="keywords" content="Premier site, Colombbus, Suresnes, l'agence Suresnes, HTML 5, CSS 3,
 	Vanusa Santos, Vanusa, intégratrice Web, développeuse Web, Colombbus Suresnes">
-	<meta name="author" content="Vanusa Santos">
+    <meta name="author" content="Vanusa Santos">
 
-	<title>Les listes en HTML</title>
+    <title>Les listes en HTML</title>
     <!-- à compléter, feuille de style css, typo etc -->
     <!-- nous chargeons en CDN (Content Delivery Network) la typo FONT AWESOME, la version gratuite, qui comporte 1600 icônes. -->
     <!-- FontAwesome Typos -->
 
     <!-- les Google Fonts Anton, Lemonada et Oswald -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Anton&family=Lemonada&family=Oswald&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lemonada&family=Oswald&display=swap"
+        rel="stylesheet">
 
 
 
     <!-- feuille de style de premierSITE -->
-	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
 
     <script src="https://kit.fontawesome.com/a1a0ce4d00.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <!--en-tête de la page-->
     <header>
@@ -43,7 +46,7 @@
                 <h1>Mon premier site en HTML 5 et en CSS 3</h1>
             </a>
         </div>
-        
+
         <div id="social">
             <a href="http://www.instagram.com/lagencesuresnes/" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
@@ -52,109 +55,112 @@
         <div class="clear"></div>
     </header>
 
-        <!-- navigation principale -->
-		<nav>
-			<div>
-				<!-- zone du menu avec des liens simples pour faire notre menu -->
-				<a href="index.html" title="HTML 5 CSS 3 - Accueil">Accueil</a>
-				<a href="texte.html" title="HTML 5 CSS 3 - Texte">Texte</a>
-				<a href="selecteur.html" title= "HTML 5 CSS 3 - Selecteur">Sélécteur</a>
-				<a href="image.html" title= "HTML 5 CSS 3 - Image">Image</a>
-				<a href="position.html" title= "HTML 5 CSS 3 - Position">Position</a>
-				<a href="zoning.html" title= "HTML 5 CSS 3 - Zoning">Zoning</a>
-				<a href="tableau.html" title= "HTML 5 CSS 3 - Tableau">Tableau</a>
-				<a href="liste.html" title="HTML 5 CSS 3 - Liste" class="active">Liste</a>
-				<a href="lien.html" title= "HTML 5 CSS 3 - Lien">Lien</a>
-				<a href="formulaire.html" title= "HTML 5 CSS 3 - Formulaire ">Formulaire</a>
-				<a href="multimedia.html" title= "HTML 5 CSS 3 - Multimédia">Multimédia</a>
-				<a href="animation.html" title= "HTML 5 CSS 3 - Animation">Animation</a>
-				<a href="recapitulatif.html" title= "HTML 5 CSS 3 - Récapitulatif">Récapitulatif</a>
-			</div>
-		</nav>
-		<!--fin nav-->
+    <!-- navigation principale -->
+    <nav>
+        <div>
+            <!-- zone du menu avec des liens simples pour faire notre menu -->
+            <a href="index.html" title="HTML 5 CSS 3 - Accueil">Accueil</a>
+            <a href="texte.html" title="HTML 5 CSS 3 - Texte">Texte</a>
+            <a href="selecteur.html" title="HTML 5 CSS 3 - Selecteur">Sélécteur</a>
+            <a href="image.html" title="HTML 5 CSS 3 - Image">Image</a>
+            <a href="position.html" title="HTML 5 CSS 3 - Position">Position</a>
+            <a href="zoning.html" title="HTML 5 CSS 3 - Zoning">Zoning</a>
+            <a href="tableau.html" title="HTML 5 CSS 3 - Tableau">Tableau</a>
+            <a href="liste.html" title="HTML 5 CSS 3 - Liste" class="active">Liste</a>
+            <a href="lien.html" title="HTML 5 CSS 3 - Lien">Lien</a>
+            <a href="formulaire.html" title="HTML 5 CSS 3 - Formulaire ">Formulaire</a>
+            <a href="multimedia.html" title="HTML 5 CSS 3 - Multimédia">Multimédia</a>
+            <a href="animation.html" title="HTML 5 CSS 3 - Animation">Animation</a>
+            <a href="recapitulatif.html" title="HTML 5 CSS 3 - Récapitulatif">Récapitulatif</a>
+        </div>
+    </nav>
+    <!--fin nav-->
 
-        <main>
-            <h2>Les listes - <i class="fas fa-list-ol"></i></h2>
-            <section>
-                <h3>Les listes avec la balise <code>&lt;ul&gt;</code></h3>
-                <p>Les fruits que préfère Miredie</p>
-                <!-- ul : unordered list ; liste non ordonnée ou liste à puces -->
-                <ul class="fruit">
-                    <!-- li : list item ; un élément de liste -->
-                    <li><i class="far fa-hand-spock"></i> Raisin</li>
-                    <li><i class="far fa-hand-spock"></i> Melon</li>
-                    <li><i class="far fa-hand-spock"></i> Orange</li>
-                    <li><i class="far fa-hand-spock"></i> Ananas</li>
-                </ul>
-                <h3>Les listes avec la balise <code>&lt;ol&gt;</code></h3>
-                <p>Les fruits dans l'ordre de preference</p>
-                <ol>
-                    <!-- ol : ordered list ; liste ordonnée ou liste numerotée -->
-                    <li>Raisin</li>
-                    <li>Ananas</li>
-                    <li>Melon</li>
-                    <li>Orange</li>
-                </ol>
-                <h3>Les listes imbriquées</h3>
-                <!-- ul>li*6 + ENTREE pour afficher la liste multipliée à remplir-->
-                <ul>
-                    <li>Afrique
-                        <ul>
-                            <li>Afrique du Sud</li>
-                            <li>Algérie</li>
-                            <li>Cameroun</li>
-                            <li>Maroc</li>
-                        </ul>
-                    </li>
-                    <li>Antarctique
-                        <ul>
-                            <li>Antarctique</li>
-                            <li>Îles Orcades du Sud</li>
-                            <li>Îles Malouines</li>
-                            <li>Îles Shetland du Sud</li>
-                        </ul>
-                    </li>
-                    <li>Amérique
-                        <ul>
-                            <li>Argentine</li>
-                            <li>Brésil</li>
-                            <li>Cuba</li>
-                            <li>Equateur</li>
-                        </ul>
-                    </li>
-                    <li>Asie
-                        <ul>
-                            <li>Cambodge</li>
-                            <li>Japon</li>
-                            <li>Tailande</li>
-                            <li>Vietnam</li>
-                        </ul>
-                    </li>
-                    <li>Europe
-                        <ul>
-                            <li>Angleterre</li>
-                            <li>Espagne</li>
-                            <li>France</li>
-                            <li>Portugal</li>
-                        </ul>
-                    </li>
-                    <li>Océanie
-                        <ul>
-                            <li>Australie</li>
-                            <li>Papouasie-Nouvelle Guinée</li>
-                            <li>Nouvelle Zelande</li>
-                            <li>Vanuatu</li>
-                        </ul>
-                    </li>
-                </ul>
-                
-            </section>
-        </main>
-        <footer>
-            <!-- pour le caractères spéciaux, nous avons besoin de les coder cf. https://dev.w3.org/html5/html-author/charref - Ces caractères sont des "HTML entities"-->
+    <main>
+        <h2>Les listes - <i class="fas fa-list-ol"></i></h2>
+        <section>
+            <h3>Les listes avec la balise <code>&lt;ul&gt;</code></h3>
+            <p>Les fruits que préfère Miredie</p>
+            <!-- ul : unordered list ; liste non ordonnée ou liste à puces -->
+            <ul class="fruit">
+                <!-- li : list item ; un élément de liste -->
+                <li><i class="far fa-hand-spock"></i> Raisin</li>
+                <li><i class="far fa-hand-spock"></i> Melon</li>
+                <li><i class="far fa-hand-spock"></i> Orange</li>
+                <li><i class="far fa-hand-spock"></i> Ananas</li>
+            </ul>
+            <h3>Les listes avec la balise <code>&lt;ol&gt;</code></h3>
+            <p>Les fruits dans l'ordre de preference</p>
+            <ol class="fruit-2">
+                <!-- ol : ordered list ; liste ordonnée ou liste numerotée -->
+                <li>Raisin</li>
+                <li>Ananas</li>
+                <li>Melon</li>
+                <li>Orange</li>
+            </ol>
+            <h3>Les listes imbriquées</h3>
+
+            <!-- ul>li*6 + ENTREE pour afficher la liste multipliée à remplir-->
+
+            <ul class="imbriquee">
+                <li class="affiche">Afrique
+                    <ul>
+                        <li>Afrique du Sud</li>
+                        <li>Algérie</li>
+                        <li>Cameroun</li>
+                        <li>Maroc</li>
+                    </ul>
+                </li>
+                <li class="affiche">Antarctique
+                    <ul>
+                        <li>Antarctique</li>
+                        <li>Îles Orcades du Sud</li>
+                        <li>Îles Malouines</li>
+                        <li>Îles Shetland du Sud</li>
+                    </ul>
+                </li>
+                <li class="affiche">Amérique
+                    <ul>
+                        <li>Argentine</li>
+                        <li>Brésil</li>
+                        <li>Cuba</li>
+                        <li>Equateur</li>
+                    </ul>
+                </li>
+                <li class="affiche">Asie
+                    <ul>
+                        <li>Cambodge</li>
+                        <li>Japon</li>
+                        <li>Tailande</li>
+                        <li>Vietnam</li>
+                    </ul>
+                </li>
+                <li class="affiche">Europe
+                    <ul>
+                        <li>Angleterre</li>
+                        <li>Espagne</li>
+                        <li>France</li>
+                        <li>Portugal</li>
+                    </ul>
+                </li>
+                <li class="affiche">Océanie
+                    <ul>
+                        <li>Australie</li>
+                        <li>Papouasie-Nouvelle Guinée</li>
+                        <li>Nouvelle Zelande</li>
+                        <li>Vanuatu</li>
+                    </ul>
+                </li>
+            </ul>
+
+        </section>
+    </main>
+    <footer>
+        <!-- pour le caractères spéciaux, nous avons besoin de les coder cf. https://dev.w3.org/html5/html-author/charref - Ces caractères sont des "HTML entities"-->
         <p>&copy; L'agence Suresnes 2021</p>
     </footer>
     <!-- fin footer -->
-    
+
 </body>
+
 </html>
