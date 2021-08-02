@@ -1,149 +1,156 @@
 <!DOCTYPE html>
 
 <html lang="fr">
-	<head>	
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content= "width=device-width, initial-scale=1.0">
-		
-		<!-- La description : phrase qui s'affiche et décrit le site dans un résultat de moteur de recherche.
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- La description : phrase qui s'affiche et décrit le site dans un résultat de moteur de recherche.
 		Cette balise, parmi d'autres, sera utile au référencement naturel -->
-		<meta name="description" content="Site d'apprentissage du HTML 5 et du CSS 3 - Colombbus Suresnes 2021">
-		
-		<!-- les mots-clés, utiles pour les moteurs de recherche, bien moins utilisés de nos jours... -->		
-		<meta name="keywords" content="Premier site, Colombbus, Suresnes, l'agence Suresnes, HTML 5, CSS 3,
+	<meta name="description" content="Site d'apprentissage du HTML 5 et du CSS 3 - Colombbus Suresnes 2021">
+
+	<!-- les mots-clés, utiles pour les moteurs de recherche, bien moins utilisés de nos jours... -->
+	<meta name="keywords" content="Premier site, Colombbus, Suresnes, l'agence Suresnes, HTML 5, CSS 3,
 		Vanusa Santos, Vanusa, intégratrice Web, développeuse Web, Colombbus Suresnes">
 
-		<!-- L'auteur de la page -->
-		<meta name="author" content="Vanusa Santos">
-				
-		<title>Les Liens - Mon premier site en HTML 5 et en CSS 3</title>
-		<!-- à compléter, feuille de style CSS, typologie etc. -->
+	<!-- L'auteur de la page -->
+	<meta name="author" content="Vanusa Santos">
 
-		<!-- les Google Fonts Anton, Lemonada et Oswald -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Anton&family=Lemonada&family=Oswald&display=swap" rel="stylesheet"> 
+	<title>Les Liens - Mon premier site en HTML 5 et en CSS 3</title>
+	<!-- à compléter, feuille de style CSS, typologie etc. -->
+
+	<!-- les Google Fonts Anton, Lemonada et Oswald -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anton&family=Lemonada&family=Oswald&display=swap"
+		rel="stylesheet">
 
 
 
 
-		<!-- feuille de style de MON PREMIER SITE -->
-		<link rel="stylesheet" href="css/style.css">
+	<!-- feuille de style de MON PREMIER SITE -->
+	<link rel="stylesheet" href="css/style.css">
 
-		
-		<script src="https://kit.fontawesome.com/a1a0ce4d00.js" crossorigin="anonymous"></script>
-	</head>
-	<body>
-		<!-- bien indenter son code c'est s'assurer de la bonne imbrication des balises et augmenter la lisibité du code-->
-		<!--en-tête de la page-->
-		<header>
-			<div id="logo">
-				<!-- Le bouton et le lien vers l'ancre #logo -->
-				<a href="#logo">
-					<button type="button"><i class="fas fa-arrow-circle-up"></i></button>
-				</a>
-				<img src="img/logo.png" alt="logo html 5 et css 3">
+
+	<script src="https://kit.fontawesome.com/a1a0ce4d00.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<!-- bien indenter son code c'est s'assurer de la bonne imbrication des balises et augmenter la lisibité du code-->
+	<!--en-tête de la page-->
+	<header>
+		<div id="logo">
+			<!-- Le bouton et le lien vers l'ancre #logo -->
+			<a href="#logo">
+				<button type="button"><i class="fas fa-arrow-circle-up"></i></button>
+			</a>
+			<img src="img/logo.png" alt="logo html 5 et css 3">
+		</div>
+
+		<div id="slogan">
+			<a href="index.html">
+				<h1>Mon premier site en HTML 5 et en CSS 3</h1>
+			</a>
+		</div>
+
+		<div id="social">
+			<a href="http://www.instagram.com/lagencesuresnes/" target="_blank"><i class="fab fa-instagram"></i></a>
+			<a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
+		</div>
+
+		<div class="clear"></div>
+	</header>
+
+	<!-- navigation principale -->
+	<nav>
+		<div>
+			<!-- zone du menu avec des liens simples pour faire notre menu -->
+			<!-- 2/ 2nd type de liens : les liens d'une page à une autre page dans le même site -->
+			<a href="index.html" title="HTML 5 CSS 3 - Accueil">Accueil</a>
+			<a href="texte.html" title="HTML 5 CSS 3 - Texte">Texte</a>
+			<a href="selecteur.html" title="HTML 5 CSS 3 - Selecteur">Sélécteur</a>
+			<a href="image.html" title="HTML 5 CSS 3 - Image">Image</a>
+			<a href="position.html" title="HTML 5 CSS 3 - Position">Position</a>
+			<a href="zoning.html" title="HTML 5 CSS 3 - Zoning">Zoning</a>
+			<a href="tableau.html" title="HTML 5 CSS 3 - Tableau">Tableau</a>
+			<a href="liste.html" title="HTML 5 CSS 3 - Liste">Liste</a>
+			<a href="lien.html" title="HTML 5 CSS 3 - Lien" class="active">Lien</a>
+			<a href="formulaire.html" title="HTML 5 CSS 3 - Formulaire ">Formulaire</a>
+			<a href="multimedia.html" title="HTML 5 CSS 3 - Multimédia">Multimédia</a>
+			<a href="animation.html" title="HTML 5 CSS 3 - Animation">Animation</a>
+			<a href="recapitulatif.html" title="HTML 5 CSS 3 - Récapitulatif">Récapitulatif</a>
+			<!-- 2/ 2nd type de liens : les liens d'une page à une autre page dans le même site -->
+		</div>
+	</nav>
+	<!--fin nav-->
+	<!-- contenu principal -->
+	<main>
+		<section>
+			<h2>Les liens - <i class="fas fa-anchor"></i></h2>
+			<div class="ancre">
+				<!-- raccourci : a*3 + entree -->
+				<!-- 1/ premier type de liens hyper-texte une ancre a/Le Lien vers l'ancre attribu ex. "#Liens" -->
+				<a href="#liens">Les liens</a>
+				<a href="#menu">Un menu</a>
+				<a href="#menu-deroulant">Un menu déroulant</a>
 			</div>
+			<hr>
+		</section>
+		<!-- b/l'ancre du lien id="Liens" -->
+		<section id="liens">
+			<h3>Les liens</h3>
 
-			<div id="slogan">
-				<a href="index.html">
-					<h1>Mon premier site en HTML 5 et en CSS 3</h1>
-				</a>
-			</div>
-			
-			<div id="social">
-				<a href="http://www.instagram.com/lagencesuresnes/" target="_blank"><i class="fab fa-instagram"></i></a>
-				<a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
-			</div>
+			<!-- title=CodePen ici apres Target est facultatif -->
+			<!-- target="_blank pour ouvrir le liens dans un nouvel onglet" -->
 
-			<div class="clear"></div>
-		</header>
-		
-		<!-- navigation principale -->
-		<nav>
-			<div>
-				<!-- zone du menu avec des liens simples pour faire notre menu -->
-				<!-- 2/ 2nd type de liens : les liens d'une page à une autre page dans le même site -->
-				<a href="index.html" title="HTML 5 CSS 3 - Accueil">Accueil</a>
-				<a href="texte.html" title="HTML 5 CSS 3 - Texte">Texte</a>
-				<a href="selecteur.html" title= "HTML 5 CSS 3 - Selecteur">Sélécteur</a>
-				<a href="image.html" title= "HTML 5 CSS 3 - Image">Image</a>
-				<a href="position.html" title= "HTML 5 CSS 3 - Position">Position</a>
-				<a href="zoning.html" title= "HTML 5 CSS 3 - Zoning">Zoning</a>
-				<a href="tableau.html" title= "HTML 5 CSS 3 - Tableau">Tableau</a>
-				<a href="liste.html" title="HTML 5 CSS 3 - Liste">Liste</a>
-				<a href="lien.html" title= "HTML 5 CSS 3 - Lien" class="active">Lien</a>
-				<a href="formulaire.html" title= "HTML 5 CSS 3 - Formulaire ">Formulaire</a>
-				<a href="multimedia.html" title= "HTML 5 CSS 3 - Multimédia">Multimédia</a>
-				<a href="animation.html" title= "HTML 5 CSS 3 - Animation">Animation</a>
-				<a href="recapitulatif.html" title= "HTML 5 CSS 3 - Récapitulatif">Récapitulatif</a>
-				<!-- 2/ 2nd type de liens : les liens d'une page à une autre page dans le même site -->
-			</div>
-		</nav>
-		<!--fin nav-->
-		<!-- contenu principal -->
-		<main>
-			<section>
-				<h2>Les liens - <i class="fas fa-anchor"></i></h2>
-				<div class="ancre">
-					<!-- raccourci : a*3 + entree -->
-					<!-- 1/ premier type de liens hyper-texte une ancre a/Le Lien vers l'ancre attribu ex. "#Liens" -->
-					<a href="#liens">Les liens</a>
-					<a href="#menu">Un menu</a>
-					<a href="#menu-deroulant">Un menu déroulant</a>
-				</div>
-				<hr>
-			</section>
-			<!-- b/l'ancre du lien id="Liens" -->
-			<section id="liens">
-				<h3>Les liens</h3>
-				
-				<!-- title=CodePen ici apres Target est facultatif -->
-				<!-- target="_blank pour ouvrir le liens dans un nouvel onglet" -->
+			<!-- 3/ 3e type de lien : Les liens vers des sites externes  -->
+			<a href="https://codepen.io" target="_blank" title="CodePen">CodePen pour s'entraîner au code</a>
+			<!-- un lien vers le site du Monde avec target_blanck pour ouvrir dans un nouvel onglet -->
+			<a href="https://www.lemonde.fr/" target="_blank">Le Monde</a>
+			<!-- un lien pour télécharger un fichier -->
+			<a href="docs/planning_suresnes_v1.pdf" target="#">Télécharger le planning du chantier de Suresnes</a>
+			<!-- sur le lien une fonction JS dans l'attribut onclick qui permet d'imprimer la page -->
+			<a href="#" onclick="window.print()">Imprimer la page</a>
+		</section>
 
-				<!-- 3/ 3e type de lien : Les liens vers des sites externes  -->
-				<a href="https://codepen.io" target="_blank" title="CodePen">CodePen pour s'entraîner au code</a>
-				<!-- un lien vers le site du Monde avec target_blanck pour ouvrir dans un nouvel onglet -->
-				<a href="https://www.lemonde.fr/" target="_blank">Le Monde</a>
-				<!-- un lien pour télécharger un fichier -->
-				<a href="docs/planning_suresnes_v1.pdf" target="#">Télécharger le planning du chantier de Suresnes</a>
-				<!-- sur le lien une fonction JS dans l'attribut onclick qui permet d'imprimer la page -->
-				<a href="#" onclick="window.print()">Imprimer la page</a>
-
-			</section>
-			<section id="menu">
-				<nav>
-					<!-- raccourci : ul<li*4>a + ENTREE -->
-					<ul>
-						<!-- on trouve fréquement, en code, des navigations faites avec un ul, une liste non-ordonnée -->
-						<li><a href="#">Accueil</a></li>
-						<li><a href="#">Parcours</a></li>
-						<li><a href="#">Réalisations</a></li>
-						<li><a href="#">Contact</a></li>
-					</ul>
-				</nav>
-			</section>
-			
-			<section id="menu-deroulant">
-				<!-- EXO faire la liste imriquées -->
-				<h2>Un menu déroulant</h2>
-				<!-- ul >li*5>a + entree -->
-				<!-- ul ne peut pas être un enfant de ul, vus sur le site validator W3 -->
+		<section id="menu">
+			<h2>Une nav simples</h2>
+			<nav>
+				<!-- raccourci : ul<li*4>a + ENTREE -->
 				<ul>
+					<!-- on trouve fréquement, en code, des navigations faites avec un ul, une liste non-ordonnée -->
 					<li><a href="#">Accueil</a></li>
-					<li>
-						<a href="#">Formation</a>
-						<ul>
+					<li><a href="#">Parcours</a></li>
+					<li><a href="#">Réalisations</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</section>
+
+		<section id="menu-deroulant">
+			<!-- EXO faire la liste imriquées -->
+			<h2>Un menu déroulant</h2>
+			<!-- ul >li*5>a + entree -->
+			<!-- ul ne peut pas être un enfant de ul, vus sur le site validator W3 -->
+
+			<nav>
+				<ul class="niveau-1">
+					<li><a href="#" title="Accueil">Accueil</a></li>
+					<li class="sous-menu">
+						<a href="#" title="Formation">Formation</a>
+						<ul class="niveau-2">
 							<li><a href="#" title="Etudiant">Etudiant</a></li>
-							<li><a href="#" title="Emplou du temps">Emploi du temps</a></li>
+							<li><a href="#" title="Emploi du temps">Emploi du temps</a></li>
 							<li><a href="#" title="Recherche d'emploi">Recherche d'emploi</a></li>
 							<li><a href="#" title="Documents">Documents</a></li>
 						</ul>
 					</li>
-					<li><a href="#">Informations</a></li>
-					<li>
-						<ul>
+					<li><a href="#" title="Informations">Informations</a></li>
+					<li class="sous-menu">
+						<a href="#" title="Cours">Cours</a>
+						<ul class="niveau-2">
 							<li><a href="#" title="Internet">Internet</a></li>
 							<li><a href="#" title="HTML">HTML</a></li>
 							<li><a href="#" title="CMS">CMS</a></li>
@@ -157,16 +164,18 @@
 					</li>
 					<li><a href="#" title="Mon CV">Mon CV</a></li>
 				</ul>
-			</section>
-			
-		</main>
-		<!--fin main-->
+			</nav>
+		</section>
 
-		<!-- pied de page-->
-		<footer>
-			<p>&copy; L'agence Suresne 2021 - Vanusa Santos</p>
-		</footer>
-		<!--fin footer-->
-		
-	</body>
+	</main>
+	<!--fin main-->
+
+	<!-- pied de page-->
+	<footer>
+		<p>&copy; L'agence Suresnes 2021 - Vanusa Santos</p>
+	</footer>
+	<!--fin footer-->
+
+</body>
+
 </html>

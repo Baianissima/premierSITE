@@ -526,7 +526,7 @@ ol.fruit-2 {
 
     background: #2c3e50;
     border-radius: 15px;
-    box-shadow: 0px 0px 10px 3px black;
+    box-shadow: 2px 2px 20px 3px rgb(24, 248, 43);
 
     color: #fff;
     text-decoration: none;
@@ -540,3 +540,89 @@ ol.fruit-2 {
     text-shadow: 1px 5px 10px rgb(243, 12, 70);
     transition-duration: 0.5s;
 }
+
+/* La nav dans l id menu */
+
+#menu nav {
+    background: transparent;
+    border: none;
+}
+
+#menu ul {
+    list-style: none;
+    text-align: center;
+}
+
+#menu ul li {
+    display: inline-block;
+}
+
+#menu nav a {
+    padding: 10px;
+    background: #ddd;
+        
+    color: grey;
+    text-decoration: none;
+
+    transition: 1s ease-in;
+    /* ici la transition est lente (1s) au debut puis accelere jusqu à la fin avec ease-in --- lent sur le debut at accelere de plus en plus à la fin */
+}
+
+#menu nav a:hover {
+    background: #069;
+    color: #fff;
+}
+
+
+/* Le menu déroulant */
+
+/* la hauteur de la section qui contient le menu */
+#menu-deroulant {
+    height: 650px;
+}
+
+/* on enlève les styles que l'élément nav hérite de la nav du site */
+#menu-deroulant nav {
+    width: 90%;
+    margin: 0 auto;
+
+    background: transparent;
+    border: none;
+}
+
+/* on fait floter à gauche les li de la ul principale */
+#menu-deroulant nav ul li {
+    float: left;
+    list-style: none;
+    /* avec list-style: none, la li pert les puces */
+    width: 20%;
+}
+
+/* les deux ul enfants de la ul principale sont display none,on les masque */
+#menu-deroulant ul ul {
+    display: none;
+    /* ici le display none fait disparaitre les ul qui sont dans une ul --- */
+}
+
+/* ces deux ul ont une classe niveau-2 et sur le hover des li qui contiennent ces ul on fait display block, on les fait réaparaître */
+#menu-deroulant nav ul.niveau-1 li.sous-menu:hover ul.niveau-2 {
+    display: block;
+}
+
+#menu-deroulant nav ul li ul li {
+    border-top: 1px solid #333;
+    width: 100%;
+}
+
+#menu-deroulant nav li {
+    background: #ccc;
+}
+
+#menu-deroulant nav li a {
+    padding: 4px 0 4px;
+    display: block;
+}
+
+/* #menu-deroulant ul {
+    text-align: center;
+} ICI cette syntaxe est redondante, la UL est alignée sans cette */
