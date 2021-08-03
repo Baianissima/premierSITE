@@ -1,0 +1,93 @@
+<body>
+    <!-- <div class="wrapper"> -->
+     <h2><i class="fas fa-user-plus">  Inscrivez-vous au club tricot</i></h2>
+     <form action="inscription.php" method="POST">
+     <fieldset>
+         <legend>Identité</legend>
+         <label for="nom">Nom *</label>
+            <input type="text" name="nom" id="nom" placeholder="nom" required>
+         <label for="prenom">Prénom *</label>
+            <input type="text" name="prenom" id="prenom" placeholder="prenom" required>
+     </fieldset>
+ 
+     <fieldset>
+         <legend>Votre adresse postale</legend>
+         <label for="adresse">Adresse </label>
+            <input type="text" name="adresse postale" id="adresse" placeholder="adresse postale">
+         <label for="code postale">Code postale</label>
+            <input type="text" name="code postale" id="code postale" placeholder="code postale">
+         <label for="ville">Ville</label>
+            <input type="ville" name="ville" id="ville" placeholder="ville">
+     </fieldset>
+ 
+     <fieldset>
+         <legend>Votre email</legend>
+         <label for="adresse email"> Adresse email *</label>
+            <input type="text" name="email" id="email" placeholder="email" required>
+     </fieldset>
+ 
+     <fieldset>
+         <legend>Sexe</legend> <!-- le name pour les boutons radio doit être identique afin de ne pouvoir être sélectionné qu'une seule fois -->
+         <label for="sexe">Homme </label>
+            <input type="radio" name="sexe" id="sexe" value="homme">
+         <label for="sexe">Femme </label>
+            <input type="radio" name="sexe" id="sexe" value="femme" checked>
+     </fieldset>
+ 
+     <fieldset>
+         <legend>Avez-vous du matériel ?</legend>
+         <label for="j'ai des aiguiles">J'ai des aiguilles </label>
+            <input type="checkbox" name="j'ai des aiguilles" id="j'ai des aiguilles">
+         <label for="j'ai de la laine">J'ai de la laine</label>
+            <input type="checkbox" name="j'ai de la laine" id="j'ai de la laine">
+         <label for="non, je n'ai rien">Non, je n'ai rien</label>
+            <input type="checkbox" name="non, je n'ai rien" id="non, je n'ai rien">
+     </fieldset>
+ 
+     <fieldset>
+         <legend>Tricotez-vous ?</legend>
+         <label for="votre usage du tricot">Votre usage du tricot</label>
+ 
+            <select name="tricot" id="tricot">
+             <option value="">Choisissez votre niveau en tricot</option>
+             <option value="faible">Faible</option>
+             <option value="moyen">Moyen</option>
+             <option value="élévé">Elévé</option>
+           </select>
+     </fieldset>
+ 
+     <!-- <fieldset> 
+         <legend>Tricotez-vous ? </legend>
+         <label for="niveau-select">Votre usage du tricot</label>
+         <select name="niveau" id="niveau-select">
+             <option value="">-- Choissisez votre niveau en tricot --</option>
+             <option value="jamais">jamais</option>
+             <option value="longtemps">il y a longtemps</option>
+             <option value="parfois">parfois</option>
+             <option value="toujours">tous les jours</option>
+         </select> 
+     </fieldset> -->
+ 
+     <fieldset>
+         <legend>Votre commentaire</legend>
+         <label for="votre message">rédigez un message </label>
+         <br>
+         <textarea name="votre message" id="votre message" placeholder="Dites-nous en un peu plus si vous le souhaitez..." cols="50" rows="5"></textarea>
+     </fieldset>
+ 
+     <fieldset>
+         <legend>Inscrivez-vous en envoyant le formulaire</legend>
+             <input type="reset" name="inscrivez-vous" value="Inscrivez-vous">
+             <input type="submit" name="effacer" value="Effacer">
+         <label for="obligatoire">Obligatoire *</label>
+     </fieldset>
+     </form>
+  <!-- </div> -->
+ 
+     <footer>
+         <!--<p>ici,le pied de page</p>-->
+         <p>&copy; L'agence Suresnes 2021</p>
+    </footer>
+     
+ </body>
+ </html>

@@ -626,3 +626,35 @@ ol.fruit-2 {
 /* #menu-deroulant ul {
     text-align: center;
 } ICI cette syntaxe est redondante, la UL est alignée sans cette */
+
+
+/* LA PAGE FORMULAIRE */
+
+form {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0 20px 100px;
+    
+    background: #80bceb;
+    border-radius: 20px;
+}
+
+label {
+    margin-left: 50px;
+}
+
+textarea {
+    resize: none;
+    /* resize : on ne peut pas agrandir le formulaire */
+}
+
+label {
+    margin: 20px 10px;
+}
+
+/* input {
+    display: inline-block;
+    width: 500px;
+    margin-left: 50px;
+    position: fixed;
+} */

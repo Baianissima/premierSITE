@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>	
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content= "width=device-width, initial-scale=1.0">
+	
+	<!-- La description : phrase qui s'affiche et décrit le site dans un résultat de moteur de recherche.
+	Cette balise, parmi d'autres, sera utile au référencement naturel -->
+	<meta name="description" content="Site d'apprentissage du HTML 5 et du CSS 3 - Colombbus Suresnes 2021">
+	
+	<!-- les mots-clés, utiles pour les moteurs de recherche, bien moins utilisés de nos jours... -->		
+	<meta name="keywords" content="Premier site, Colombbus, Suresnes, l'agence Suresnes, HTML 5, CSS 3,
+	Vanusa Santos, Vanusa, intégratrice Web, développeuse Web, Colombbus Suresnes">
+
+	<!-- L'auteur de la page -->
+	<meta name="author" content="Vanusa Santos">
+			
+	<title>05_Formulaire_avec la baliese fieldset</title>
+	<!-- à compléter, feuille de style CSS, typologie etc. -->
+
+	<!-- les Google Fonts Anton, Lemonada et Oswald - link de l ensemble de polices recuperer sur le site Google Fonts et colé ici -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anton&family=Lemonada&family=Oswald&display=swap" rel="stylesheet"> 
+
+	<!-- feuille de style de MON PREMIER SITE : cette balise LINK sert à relier HTML au CSS -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- nous chargeons en CDN (Content Delivery Nerwork) la typo font awesome, la version gratuite, qui comporte 1600 icônes -->
+	<!-- FontAwesomeTypos -->
+	<script src="https://kit.fontawesome.com/a1a0ce4d00.js" crossorigin="anonymous"></script>
+
+    <!-- POUR CET EXO ON A FAIT LE STYLE DANS LE HTML -->
+
+    <style>
+        body {
+            background-color: rgb(252, 92, 92);
+        }
+
+        .wrapper {
+            width: 900px;
+            margin: 0 auto;
+            background-color: #fff;
+        }
+
+        h1 {
+            margin: auto;
+            padding: 30px;
+            width: 80%;
+            text-align: center;
+            color: rgb(252, 92, 92);
+        }
+
+        form {
+            padding: 20px;
+        }
+
+        fieldset {
+            margin: 20px;
+            background-color: rgb(238, 237, 237);
+            border-left: 10px solid rgb(252, 92, 92);
+            border-top: none;
+            border-right: none;
+            border-bottom: none;    
+        }
+
+        legend {
+            font-weight: bold;
+            padding: 5px;
+            color: rgb(252, 92, 92);
+            background-color: #fff;
+        }
+
+        input {
+            margin-right: 25px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- <div class="wrapper"> -->
+    <h2>Inscrivez-vous au club tricot <i class="fas fa-user-plus"> </i></h2>
+    <form action="inscription.php" method="POST">
+        <fieldset>
+            <legend>Identité</legend>
+            <label for="nom">Nom *</label>
+            <input type="text" name="nom" id="nom" placeholder="nom" required>
+            <label for="prenom">Prénom *</label>
+            <input type="text" name="prenom" id="prenom" placeholder="prenom" required>
+            <!-- id obligatoire ici pour aller direct a la boite a taper -->
+        </fieldset>
+                
+        <fieldset>
+            <legend>Votre adresse postale</legend>
+            <label for="adresse">Adresse</label>
+            <input type="text" name="adresse" id="adresse" placeholder="adresse" required>
+            <label for="code_postal">Code postal</label>
+            <input type="text" name="code_postal" id="code-postal" placeholder="code postal" required>
+            <label for="prenom">Ville</label>
+            <input type="text" name="ville" id="ville" placeholder="ville">
+        </fieldset>
+
+        <fieldset>
+            <legend>Votre email</legend>
+            <label for="adresse email">Adresse email *</label>
+            <input type="text" name="email" id="email" placeholder="email" required>
+        </fieldset>
+                
+        <fieldset>
+            <legend>Sexe</legend>
+            <label for="homme">Homme</label>
+            <input type="radio" name="sexe" id="homme" placeholder="sexe" value="Homme">
+            <label for="femme">Femme</label>
+            <input type="radio" name="sexe" id="femme" placeholder="Femme">
+                <!-- boutton radio : on coche soit l'un soit l autre des bouttons, ou 1 parmi plusieurs bouttons -->
+                <!-- le name pour les boutons radio doit être identique afin de ne pouvoir être sélectionné qu'une seule fois : voir sur MDN les elements <fieldset> <label> etc -->
+        </fieldset>
+
+        <fieldset>
+            <legend>Avez-vous du matériel ?</legend>
+            <label for="aiguilles">J'ai des aiguilles</label>
+            <input type="checkbox" name="aiguilles" id="aiguilles" value="aiguilles">
+            <label for="laine">J'ai de la laine</label>
+            <input type="checkbox" name="aiguilles" id="laine" value="laine">
+        </fieldset>
+
+        <fieldset>
+            <legend>Tricotez-vous ?</legend>
+            <label for="niveau-select">Votre usage du tricot</label>
+            <select name="niveau" id="niveau-select">
+                <option value="">Choissisez votre niveau en tricot</option>
+                <option value="jamais">Jamais</option>
+                <option value="jenaifait">Il y a longtemps</option>
+                <option value="parfois">Parfois</option>
+                <option value="toujours">Tous les jours</option>
+            </select>
+        </fieldset>
+
+        <!-- <fieldset> 
+         <legend>Tricotez-vous ? </legend>
+         <label for="niveau-select">Votre usage du tricot</label>
+         <select name="niveau" id="niveau-select">
+             <option value="">-- Choissisez votre niveau en tricot --</option>
+             <option value="jamais">jamais</option>
+             <option value="longtemps">il y a longtemps</option>
+             <option value="parfois">parfois</option>
+             <option value="toujours">tous les jours</option>
+         </select> 
+     </fieldset> -->
+
+        <fieldset>
+            <legend>Votre commentaire</legend>
+            <label for="message">Rédigez un message</label>
+            <br>
+            <textarea name="message" id="message" cols="50" rows="5" placeholder="Dites-nous un peu plus si vous le souhaitez..."></textarea>
+            <!-- le placeholder disparait dans le champs de texte qd on commence à écrirer dedans -->
+        </fieldset>
+
+        <fieldset>
+            <legend>Inscrivez-vous en envoyant le formulaire</legend>
+            <input type="submit" name="inscription" value="Inscrivez-vous">
+			<input type="reset" name="annulation" value="Effacer">
+            <label for="obligatoire">* Obligatoire</label>
+            <!-- <small>* Obligatoire</small> -->
+        </fieldset>
+    </form>
+    <!-- </div> -->
+    <footer>
+        <!--<p>ici,le pied de page</p>-->
+        <p>&copy; L'agence Suresnes 2021</p>
+    </footer>
+</body>
+</html>
+
+
+
+
