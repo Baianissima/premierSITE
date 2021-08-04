@@ -82,70 +82,93 @@
 <body>
     <main>
         <section>
-            <h2>Formulaire - <i class=""</h2>
+            <h2>Page du Formulaire   <i class="fab fa-wpforms"></i><i class=""</h2>
 				<!-- form la balise d'un formulaire, tous le champs d un formulaire sont dans cette balise -->
 				<!-- method; maniere de faire circuler les informations GET ou POST -->
 				<!-- action; url de destination -->
 				<!-- enctype="multipart/form-data"; autre attribut important qd on envoie un fichier -->
 			<form action="incrisption.php" method="POST">
-				<!--label, étiquette du formulaire, input, champs de formulaire, type text-->
-				<!-- name sera indispensable en php, id sera indispensable en JS -->
-				<!-- required; champs requis rendu dans le navigateur -->
-				<!-- * veut dire que c est obligatoire -->
-				<label for="pseudo">Choisissez un pseudo *</label>
-				<input type="text name="pseudo" id="pseudo" required>
+				<fieldset>
+					<legend>Pseudo</legend>
+
+					<!--label, étiquette du formulaire, input, champs de formulaire, type text-->
+					<!-- name sera indispensable en php, id sera indispensable en JS -->
+					<!-- required; champs requis rendu dans le navigateur -->
+					<!-- * veut dire que c est obligatoire -->
+					<label for="pseudo">Choisissez un pseudo *</label>
+					<input type="text" name="pseudo" id="pseudo" placeholder="pseudo" required>
+				</fieldset>
+				
 				<br>
 
-				<!-- tous les champs du formulaire sont inline, donc Patrick a mis des <br> -->
-				<label for="prenom">Prénom</label>
-				<input type="text" name="prenom" id="prenom">
+				<fieldset>
+					<legend>Prénom</legend>
+					<!-- tous les champs du formulaire sont inline, donc Patrick a mis des <br> -->
+					<label for="prenom">Prénom *</label>
+					<input type="text" name="prenom" id="prenom" placeholder="prenom" required>
+				</fieldset>
+				
 				<br>
 
-				<label for="nom">Nom *</label>
-				<input type="text" name="nom" id="nom" required>
+				<fieldset>
+					<legend>Nom</legend>
+					<label for="nom">Nom *</label>
+					<input type="text" name="nom" id="nom" placeholder="nom" required>
+				</fieldset>
+
 				<br>
 
-				<label for="password">Choisissez un mot de passe</label>
-				<input type="password" name="password" id="password" required>
+				<fieldset>
+					<legend>Mot de passe</legend>
+					<label for="password">Choisissez un mot de passe *</label>
+					<input type="password" name="password" id="password" placeholder="password" required>
+				</fieldset>
+
 				<br>
 
-				<label for="email">Courriel *</label>
-				<input type="email" name="email" id="email" required>
+				<fieldset>
+					<legend>Courriel</legend>
+					<label for="email">Courriel *</label>
+					<input type="email" name="email" id="email" placeholder="email" required>
+				</fieldset>
+				
 				<br>
 
 				<!-- <label for="email">Courriel *</label>
 				<input type="email" name="email" id="email" required>
 				<br> -->
+				<fieldset class="fruits">
+					<legend>Quels fruits aimez-vous ?</legend>
 
-				<p>Quels fruits aimez-vous ?</p>
+					<label for="orange">Orange</label>
+					<input type="checkbox" name="orange" id="orange">
+					<br>
 
-				<label for="orange">Orange</label>
-				<input type="checkbox" name="orange" id="orange">
-				<br>
+					<label for="fraise">Fraise</label>
+					<input type="checkbox" name="fraise" id="faise">
 
-				<label for="fraise">Fraise</label>
-				<input type="checkbox" name="fraise" id="faise">
+					<label for="cerise">Cerise</label>
+					<input type="checkbox" name="cerise" id="cerise">
 
-				<label for="cerise">Cerise</label>
-				<input type="checkbox" name="cerise" id="cerise">
+					<label for="kiwi">kiwi</label>
+					<input type="checkbox" name="kiwi" id="kiwi">
 
-				<label for="kiwi">kiwi</label>
-				<input type="checkbox" name="kiwi" id="kiwi">
-
-				<label for="tous_fruits">J'aime ces fruits et tous les autres</label>
-				<input type="checkbox" name="aucun" id="aucun" checked>
-				<!-- checked = ça coche par défaut ??? la case ??? -->
+					<label for="tous_fruits">J'aime ces fruits et tous les autres</label>
+					<input type="checkbox" name="aucun" id="aucun" checked>
+					<!-- checked = ça coche par défaut ??? la case ??? -->
 				
+				</fieldset>
 				<p>Si vous deviez sauver un légume de la destruction : lequel ?</p>
 
 				<select name="legume" id="legume">
 					<option value="">Choisissez un légume</option>
 					<option value="poireau">Poireau</option>
-					<option value="choux_bruxelles">Choux de Bruxelles</option>
-					<option value="celeri">céleri</option>
-					<option value=""></option>
+					<option value="choux_bruxelles">Choux-de-bruxelles</option>
+					<option value="celeri">Céleri</option>
+					<option value="Autre"></option>
 				</select>
-
+				<br>
+				<br>
 				<label for="remarque">Une remarque ?</label>
 				<textarea name="remarque" id="remarque" cols="50" rows="5"></textarea>
 

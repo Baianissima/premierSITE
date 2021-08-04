@@ -633,23 +633,52 @@ ol.fruit-2 {
 form {
     width: 90%;
     margin: 0 auto;
-    padding: 20px 0 20px 100px;
+    padding: 20px;
     
     background: #80bceb;
     border-radius: 20px;
 }
 
-label {
+/* label {
     margin-left: 50px;
+} */
+
+fieldset {
+    margin: 20px;
+    background-color: rgb(238, 237, 237);
+    border: none;
+   
+    /* border-left : 1px solid rgb(252, 92, 92);  */
+    /* border-top: none;
+    border-right: none;
+    border-bottom: none;   */
 }
 
-textarea {
+
+legend {
+    font-weight:lighter;
+    padding: 0 20px;
+    color:rgb(238, 237, 237);
+    background-color: rgb(238, 58, 58);
+}
+
+label{
+    font-size: 40%
+    
+}
+
+
+/* textarea {
     resize: none;
     /* resize : on ne peut pas agrandir le formulaire */
-}
 
-label {
-    margin: 20px 10px;
+
+/* label {
+    margin-right: 20px 10px;
+} */
+
+input {
+    margin-right: 30px;
 }
 
 /* input {
@@ -658,3 +687,6 @@ label {
     margin-left: 50px;
     position: fixed;
 } */
+
+
+
