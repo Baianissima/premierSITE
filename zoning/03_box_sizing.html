@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03_Le box-sizing</title>
+    <style>
+
+        #une {
+            border: 10px solid blue;
+            width: 300px;
+            height: 100px;
+            box-sizing: border-box;
+        }
+
+        #deux {
+            border: 10px solid green;
+            width: 300px;
+            height: 100px;
+            padding: 50px;
+            box-sizing: border-box;
+            /* avec cette proprieté pas besoin d adittioner border et ? */
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div id="une">
+        1/ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus repudiandae blanditiis corporis nostrum dolorum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae ipsa temporibus nostrum id omnis voluptatibus, laborum, tenetur ex incidunt consectetur quae adipisci assumenda sunt.
+    </div>
+
+    <div id="deux">
+        2/ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae ipsa temporibus nostrum id omnis voluptatibus, laborum, tenetur ex incidunt consectetur quae adipisci assumenda sunt.
+    </div>
+</body>
+</html>

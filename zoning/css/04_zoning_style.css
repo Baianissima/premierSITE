@@ -1,0 +1,43 @@
+
+*
+
+
+        body {
+            background-color: whitesmoke;
+            text-align: center;
+        }
+
+        main {
+            width: 1200px;
+            margin: 0 auto; 
+            /* margin auto = autocentré */
+            background-color: #ffc0cb;
+        }
+
+        header {
+            width: 1200px;
+            height: 150px;
+            /* ou 100% du parent*/
+            background-color: #ffc0cb;  
+        }
+
+        aside {
+            float: left;
+            width: 200px;
+            min-height: 600px;
+            background-color: #7ff798;
+           
+        }
+
+        section {
+            float: left;
+            width: 800px;
+            min-height: 600px;
+            background-color: #54f5cb;
+        }
+
+       clear {
+           clear: both;
+       }
+
+       

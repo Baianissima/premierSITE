@@ -17,7 +17,7 @@ font-family:'Oswald', sans-serif;  */
 * {
     box-sizing: border-box;
 }
-
+/* sans le box-sizingo ici les eleents ne flottent plus */
 /* ci dessus, on met tous les elements en box-sizing , border-box */
 
 html, body, div, span, applet, object, iframe,
@@ -233,6 +233,7 @@ background: rgba(178, 178, 178, 0.178);
 aside {
 height: 250px;
 width: 30%;
+padding: 10px;
 float: left;
 background-color: #a6d6c3;   
 }
@@ -515,8 +516,8 @@ ol.fruit-2 {
 /* fin page liste */
 
 
+/* PAGE DES LIENS */
 
-/* page des liens */
 /* Les ancres en haut de page */
 .ancre {
     text-align: center;
@@ -576,8 +577,7 @@ ol.fruit-2 {
     color: #fff;
 }
 
-
-/* Le menu déroulant */
+/* MENU DEROULANT */
 
 /* la hauteur de la section qui contient le menu */
 #menu-deroulant {
@@ -631,7 +631,7 @@ ol.fruit-2 {
 } ICI cette syntaxe est redondante, la UL est alignée sans cette */
 
 
-/* LA PAGE FORMULAIRE */
+/* PAGE FORMULAIRE */
 
 form {
     width: 90%;
@@ -657,7 +657,6 @@ fieldset {
     border-bottom: none;   */
 }
 
-
 legend {
     font-weight:lighter;
     padding: 0 20px;
@@ -669,7 +668,6 @@ label{
     font-size: 40%
     
 }
-
 
 /* textarea {
     resize: none;
@@ -761,3 +759,65 @@ iframe[allowfullscreen] {
     text-align: center;
 }
 
+/* PAGE DES ZONINGS */
+
+/* pour le zoning 1 */
+
+#zoning-1 {
+    width: 800px;
+    margin: auto;
+    color: rgb(49, 49, 49);
+    text-align: center;
+}
+
+#zoning-1 header {
+    height: 70px;
+    background-color: #F7F39A;
+}
+
+#zoning-1 aside {
+    height: 525px;
+    width: 20%;
+    float: left;
+    background-color: #A3DE83;  
+}
+
+#zoning-1 section {
+    height: 525px;
+    width: 80%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    background-color: #4dc40d;
+}
+
+/* zoning 2 */
+
+#zoning-2 {
+    width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+#zoning-2 header {
+    height: 50px;
+    background-color: #800080 ;
+}
+
+#zoning-2 aside {
+    /* height: 200px; */
+    width: 50px;
+    min-height: 600px;
+    float: left;
+    background-color: #a6d6c3;  
+}
+
+#zoning-2 section {
+    /* height: 400px; */
+    width: 400px;
+    min-height: 600px;
+    float: left;
+    margin: 0;
+    padding: 0;
+    background-color: #ffd6d6;
+}

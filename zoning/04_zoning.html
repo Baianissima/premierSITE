@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <title>03 zoning</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <!-- reset Eric Meyer en lien externe -->
+
+
+
+<!-- * {
+	box-sizing: border-box;
+    /* ci dessus, * dit que tous les elements seront border-box */
+} -->
+
+
+    <style>
+        body {
+            background-color: whitesmoke;       }
+
+        main {
+            width: 100%;
+            margin: auto; 
+            /* margin auto = autocentré */
+            /* background-color: #fff;   */
+        }
+
+        header {
+            float: left;
+            width: 100%;
+            height: 150px;
+            background-color: orange;
+           
+        }
+
+        aside {
+            float: left;
+            width: 10%;
+            min-height: 400px;
+            padding-left: 10px;
+
+            border-right: 10px solid paleturquoise;
+            background-color: yellow;
+            box-sizing: border-box;
+        }
+
+        section {
+            float: left;
+            width: 80%;
+            min-height: 400px;
+            padding-left: 10px;
+
+            /* max-height: 700px; */
+            background-color:cyan;
+            box-sizing: border-box;
+        }
+
+        aside {
+            float: rigth;
+            width: 10%;
+            min-height: 400px;
+            padding-left: 10px;
+
+            border-right: 10px solid paleturquoise;
+            background-color: grey;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        /* reset des marges du p car par défaut le p vient avec une marge top */
+        footer {
+            min-height: 150px;
+            background-color: #333;
+            color: white;
+        }
+
+        .clear {
+            clear: both;
+        }
+        
+        /* ici le reset pour le p, pour effacer l espace entre main */
+        footer p {
+            margin: auto;
+        }
+        
+    </style>
+<body>
+    <main>
+        <header>
+            <h1>Zone de l'en-tête <code>&lt;header></code></h1>
+            <p>100% de large</p>
+        </header>
+
+        <aside>
+            <h3>Zone à gauche <code>&lt;aside></code></h3>
+            <p>30% de large</p>
+        </aside>
+
+        <section>
+            <h2>Zone de droite ou zone principale <code>&lt;section></code></h2>
+            <p>70% de large</p>
+            <p><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<span> Il est unde debitis numquam modi non vero libero aliquid sit dolorum ipsum neque nobis quaerat, explicabo quo doloremque placeat minima tempora!<span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+        </section>
+
+        <div class="clear"></div>
+        <!-- il faut cette div class clear pour faire float et retablir le flux -->
+
+        <footer>
+            <p>pied de page <code>&lt;footer></code></p>
+        </footer>
+    </main>
+</body>
+</html>

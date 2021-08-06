@@ -1,0 +1,109 @@
+
+*
+
+/* les styles pour le premierSITE Vanusa Santos chantier Suresnes 2021-2022 */
+
+/* les typos Google Fonts utilisees dans le site : Anton (sans-serif), Oswald (sans -serif), Lemonada (manuscrite) */
+
+/* font-family:'Anton', sans-serif;
+font-family:'Lemonada', sans-serif;
+font-family:'Oswald', sans-serif;  */
+
+/* debut reset */
+
+/* @charset "UTF-8"; */
+
+/* ICI on utilise le RESET SIMPLE, non celui d Eric Meyer, qui est plus poussé  */
+/* l'étoile/astérisque signifie tout all */
+/* sinon on eut utiliser le reset d'Eric Meyer qui se trouve à cette adresse: http://meyerweb.com/eric/tools/css/reset/  */
+
+* {
+    box-sizing: border-box;
+}
+/* sans le box-sizingo ici les eleents ne flottent plus */
+/* ci dessus, on met tous les elements en box-sizing , border-box */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* fin reset simple */
+/* les typos goole font utilisees das le site */
+
+body {
+    background-color:#f0fff0;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1.1em;
+    /* 1.1em = valeur par défaut pour le navigateur, ce sera proportionnel après, par rapport à cette taille de base */
+}
+
+main {
+    width: 1200px;
+    margin: auto; 
+    /* margin auto = autocentré */
+}
+
+header {
+    width: 1200px;
+    height: 150px;
+    /* ou 100% du parent*/
+    background-color: #ff69b4;
+}
+
+/* taille de typo : h1 declaré plus grand que le p avec 1.8em */
+h1 {
+    font-size: 1.8em;
+}
+
+aside {
+    float: left;
+    width: 200px;
+    min-height: 600px;
+    background-color: #808000;
+   
+}
+
+section {
+    float: left; width: 800px;
+    min-height: 600px;
+    background-color: #ffa500;
+}
+
+footer {
+    /* width: 1200px; */
+    /* height: 150px; */
+    background-color: #808080;
+    padding: 50px;
+    /* float: left; */
+    /* il faut toutjours le float left, pour que le footer n'apparait pas en couleur , pour avoir le même rendu sur tous les navigateurs */
+    
+}
+
+p {
+    font-size: 1.2em;
+}
+
+.clear {
+    clear: both;
+ }
+
+ /* il faut toujours la classe CLEAR pour rétablir le flux */
+

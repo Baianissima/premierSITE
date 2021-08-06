@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <title>01 zoning</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <!-- reset Eric Meyer en lien externe -->
+
+    <style>
+
+        /* ci dessus, * dit que tous les elements seront border-box */
+
+* {
+	box-sizing: border-box;
+}
+
+
+        body {
+            background-color: pink;
+        }
+
+        main {
+            width: 1200px;
+            margin: auto; 
+            /* margin auto = autocentré */
+            background-color: #fff;  
+        }
+
+        header {
+            float: left;
+            width: 1200px;
+            height: 150px;
+            background-color:chartreuse;
+           
+        }
+
+        aside {
+            float: left;
+            width: 245px;
+            min-height: 700px;
+            border: 5px solid black;
+            /* 1px + 249 = 250px de height d origine */
+            background-color: cornsilk;
+            
+        }
+
+        section {
+            float: left;
+            width: 930px;
+            min-height: 700px;
+            padding-left: 20px solid black;
+            /* max-height: 800px; */
+            /* border: 2px solid black; */
+            background-color:cyan;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+
+        .clear {
+            clear: both;
+        }
+        /* il est toujours utile de passer une classe CLEAR pour rétablir le flux, si on a fait flotter les elements avant */
+
+
+    </style>
+<body>
+    <main>
+        <header>
+            <h1>Zone de l'en-tête <code>&lt;header></code></h1>
+            <p>1200px de large</p>
+        </header>
+
+        <aside>
+            <h3>Zone à gauche <code>&lt;aside></code></h3>
+            <p>250px de large</p>
+        </aside>
+
+        <section>
+            <h2>Zone de droite ou zone principale <code>&lt;section></code></h2>
+            <p>950px de large</p>
+            <p><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<span> Il est unde debitis numquam modi non vero libero aliquid sit dolorum ipsum neque nobis quaerat, explicabo quo doloremque placeat minima tempora!<span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<span> Il est unde debitis numquam modi non vero libero aliquid sit dolorum ipsum neque nobis quaerat, explicabo quo doloremque placeat minima tempora!<span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<span> Il est unde debitis numquam modi non vero libero aliquid sit dolorum ipsum neque nobis quaerat, explicabo quo doloremque placeat minima tempora!<span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<span> Il est unde debitis numquam modi non vero libero aliquid sit dolorum ipsum neque nobis quaerat, explicabo quo doloremque placeat minima tempora!<span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<span> Il est unde debitis numquam modi non vero libero aliquid sit dolorum ipsum neque nobis quaerat, explicabo quo doloremque placeat minima tempora!<span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<span> Il est unde debitis numquam modi non vero libero aliquid sit dolorum ipsum neque nobis quaerat, explicabo quo doloremque placeat minima tempora!<span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<span> Il est unde debitis numquam modi non vero libero aliquid sit dolorum ipsum neque nobis quaerat, explicabo quo doloremque placeat minima tempora!<span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<span> Il est unde debitis numquam modi non vero libero aliquid sit dolorum ipsum neque nobis quaerat, explicabo quo doloremque placeat minima tempora!<span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<span> Il est unde debitis numquam modi non vero libero aliquid sit dolorum ipsum neque nobis quaerat, explicabo quo doloremque placeat minima tempora!<span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<span> Il est unde debitis numquam modi non vero libero aliquid sit dolorum ipsum neque nobis quaerat, explicabo quo doloremque placeat minima tempora!<span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<span> Il est unde debitis numquam modi non vero libero aliquid sit dolorum ipsum neque nobis quaerat, explicabo quo doloremque placeat minima tempora!<span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<span> Il est unde debitis numquam modi non vero libero aliquid sit dolorum ipsum neque nobis quaerat, explicabo quo doloremque placeat minima tempora!<span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<span> Il est unde debitis numquam modi non vero libero aliquid sit dolorum ipsum neque nobis quaerat, explicabo quo doloremque placeat minima tempora!<span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<span> Il est unde debitis numquam modi non vero libero aliquid sit dolorum ipsum neque nobis quaerat, explicabo quo doloremque placeat minima tempora!<span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<span> Il est unde debitis numquam modi non vero libero aliquid sit dolorum ipsum neque nobis quaerat, explicabo quo doloremque placeat minima tempora!<span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<span> Il est unde debitis numquam modi non vero libero aliquid sit dolorum ipsum neque nobis quaerat, explicabo quo doloremque placeat minima tempora!<span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<span> Il est unde debitis numquam modi non vero libero aliquid sit dolorum ipsum neque nobis quaerat, explicabo quo doloremque placeat minima tempora!<span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<span> Il est unde debitis numquam modi non vero libero aliquid sit dolorum ipsum neque nobis quaerat, explicabo quo doloremque placeat minima tempora!<span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<span> Il est unde debitis numquam modi non vero libero aliquid sit dolorum ipsum neque nobis quaerat, explicabo quo doloremque placeat minima tempora!<span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<span> Il est unde debitis numquam modi non vero libero aliquid sit dolorum ipsum neque nobis quaerat, explicabo quo doloremque placeat minima tempora!<span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<span> Il est unde debitis numquam modi non vero libero aliquid sit dolorum ipsum neque nobis quaerat, explicabo quo doloremque placeat minima tempora!<span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<span> Il est unde debitis numquam modi non vero libero aliquid sit dolorum ipsum neque nobis quaerat, explicabo quo doloremque placeat minima tempora!<span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<span> Il est unde debitis numquam modi non vero libero aliquid sit dolorum ipsum neque nobis quaerat, explicabo quo doloremque placeat minima tempora!<span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<span> Il est unde debitis numquam modi non vero libero aliquid sit dolorum ipsum neque nobis quaerat, explicabo quo doloremque placeat minima tempora!<span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<span> Il est unde debitis numquam modi non vero libero aliquid sit dolorum ipsum neque nobis quaerat, explicabo quo doloremque placeat minima tempora!<span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<span> Il est unde debitis numquam modi non vero libero aliquid sit dolorum ipsum neque nobis quaerat, explicabo quo doloremque placeat minima tempora! background-color: cornsilk; background-color: cornsilk; background-color: cornsilk; background-color: cornsilk; background-color: cornsilk; background-color: cornsilk; background-color: cornsilk; background-color: cornsilk; background-color: cornsilk; background-color: cornsilk; background-color: cornsilk; background-color: cornsilk; background-color: cornsilk; background-color: cornsilk; background-color: cornsilk; background-color: cornsilk; background-color: cornsilk; background-color: cornsilk; background-color: cornsilk; background-color: cornsilk; background-color: cornsilk; background-color: cornsilk;</p>
+        </section>
+    </main>      
+</body>
+</html>
