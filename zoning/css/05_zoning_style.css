@@ -82,7 +82,8 @@ aside {
 }
 
 section {
-    float: left; width: 800px;
+    float: left;
+    width: 800px;
     min-height: 600px;
     background-color: #ffa500;
 }

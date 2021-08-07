@@ -791,11 +791,12 @@ iframe[allowfullscreen] {
     background-color: #4dc40d;
 }
 
-/* zoning 2 */
+/* pour le zoning 2 */
 
 #zoning-2 {
     width: 500px;
     margin: auto;
+    color: rgb(49, 49, 49);
     text-align: center;
 }
 
@@ -805,19 +806,107 @@ iframe[allowfullscreen] {
 }
 
 #zoning-2 aside {
-    /* height: 200px; */
     width: 50px;
-    min-height: 600px;
+    height: 600px;
     float: left;
     background-color: #a6d6c3;  
 }
 
 #zoning-2 section {
-    /* height: 400px; */
     width: 400px;
-    min-height: 600px;
+    height: 600px;
     float: left;
     margin: 0;
     padding: 0;
     background-color: #ffd6d6;
 }
+
+
+
+/* pour le zoning 3 */
+
+#zoning-3 {
+    width: 800px;
+    margin: auto;
+    color: rgb(49, 49, 49);
+    text-align: center;
+}
+
+#zoning-3 .section-gauche {
+    width: 50%;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+    background-color: #2dd3e3;
+    float: left;
+}
+
+#zoning-3 .section-droite {
+    width: 50%;
+    height: 400px;
+    background-color: #2dd3e3;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+#zoning-3 .section-etroite {
+    width: 800px;
+    height: 10px;
+    margin: 0;
+    padding: 0;
+    background-color:#ffd4d5;
+    float: left;
+}
+
+#zoning-3 footer {
+    width: 800px;
+    height: 90px;
+    margin: auto;
+    background-color: #d3edaf;
+    color: rgb(49, 49, 49);
+    float: left;
+}
+
+
+
+
+/* zoning 3 de MIREDI */
+
+
+
+/* main */
+/* #zoning-3 {
+    width: 800px;
+    height: 500px;
+    margin: auto;
+    background-color: pink;
+}
+
+
+#zoning-3 aside {
+    width: 400px;
+    height: 300px;
+    float: left;
+    background-color: lightblue;
+    text-align: center;
+}
+
+
+.h4 {
+    float: left;
+    width: 800px;
+    background-color: pink;
+}
+
+#zoning-3 footer {
+    float: left;
+    margin: auto;
+    padding: 50px;
+    width: 800px;
+    height: 110px;
+    background-color: yellowgreen;
+    text-align: center;
+}
+ */
+
