@@ -869,6 +869,87 @@ iframe[allowfullscreen] {
 }
 
 
+/* ZONING 4 */
+
+
+#zoning-4 {
+    width: 700px;
+    margin: auto;
+    color: rgb(49, 49, 49);
+    text-align: center;
+}
+
+#zoning-4 header {
+    width: 700px;
+    height: 98px;
+    background-color: #00ff00;
+}
+
+#zoning-4 .section-1 {
+    width: 700px;
+    height: 40px;
+    background-color:#0081be;
+    margin: 0;
+    padding: 0;
+}
+
+#zoning-4 .section-2 {
+    width: 700px;
+    height: 5px;
+    background-color: #41ccff;
+    /* float: none; */
+    margin: 0;
+    padding: 0;
+}
+
+#zoning-4 .section-3 {
+    width: 700px;
+    height: 540px;
+    background-color: white;
+    margin: auto;
+    /* padding: 50px; */
+    /* border: 50px white; */
+    float: left;
+}
+
+#zoning-4 .section-pink {
+    width: 660px;
+    height: 500px;
+    margin: auto;
+    background-color: #ff59b7;
+    float: left;
+}
+
+#zoning-4 footer {
+    width: 700px;
+    height: 50px;
+    margin: auto;
+    color:rgb(49, 49, 49);
+    background-color: #ffe4af;
+    float: left;
+   
+}
+
+
+/* ZONING 5 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* zoning 3 de MIREDI */
