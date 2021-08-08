@@ -767,6 +767,7 @@ iframe[allowfullscreen] {
     width: 800px;
     margin: auto;
     color: rgb(49, 49, 49);
+    font-weight: 1px bold;
     text-align: center;
 }
 
@@ -801,19 +802,19 @@ iframe[allowfullscreen] {
 }
 
 #zoning-2 header {
-    height: 50px;
+    height: 70px;
     background-color: #800080 ;
 }
 
 #zoning-2 aside {
-    width: 50px;
+    width: 100px;
     height: 600px;
     float: left;
     background-color: #a6d6c3;  
 }
 
 #zoning-2 section {
-    width: 400px;
+    width: 300px;
     height: 600px;
     float: left;
     margin: 0;
@@ -829,6 +830,7 @@ iframe[allowfullscreen] {
     width: 800px;
     margin: auto;
     color: rgb(49, 49, 49);
+    font-weight: 1px bold;
     text-align: center;
 }
 
@@ -876,6 +878,7 @@ iframe[allowfullscreen] {
     width: 700px;
     margin: auto;
     color: rgb(49, 49, 49);
+    /* font-weight: bold; */
     text-align: center;
 }
 
@@ -889,6 +892,7 @@ iframe[allowfullscreen] {
     width: 700px;
     height: 40px;
     background-color:#0081be;
+    float: left;
     margin: 0;
     padding: 0;
 }
@@ -897,7 +901,7 @@ iframe[allowfullscreen] {
     width: 700px;
     height: 5px;
     background-color: #41ccff;
-    /* float: none; */
+    float: left;
     margin: 0;
     padding: 0;
 }
