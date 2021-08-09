@@ -1,5 +1,5 @@
 
-*
+
 
 /* les styles pour le premierSITE Vanusa Santos chantier Suresnes 2021-2022 */
 
@@ -55,20 +55,23 @@ time, mark, audio, video {
 /* CUBITUS 2 */
 
 /* CSS de Patrick  */
-/* body {
+
+
+body {
     background-color: white;
     color: aliceblue;
 }
 
 .c1, .c2 {
-    /* height: 200px;
+    /* ce code fonctionne de la même façon de celui de Patrick :
+    height: 200px;
     width: 200px;
     margin: 5px;
     float: left;
     margin: 5px;
-    */
+    border: 1px solid black; */
 
-    /* height: 10em;
+    height: 10em;
     width: 10em;
     float: left;
     margin: 5px;
@@ -90,108 +93,3 @@ time, mark, audio, video {
 .clear {
     clear: both;
 }
- */
-
-/* CSS de Vanusa */
-body {
-    background-color: white;
-}
-
-.bleu {
-    background-color: blue;
-}
-
-.vert {
-    background-color: greenyellow;
-}
-
-.c1, .c2 {
-
-    width: 200px;
-    height: 200px;
-    margin: 5px;
-    float: left;
-    text-align: center;
-
-    border-radius: 15%;
-
-
-    .clear {
-        clear: both;
-    }
-    
-    .c1 p {
-        width: 50%;
-        margin: auto;
-    }
-
-    /* CE CODE DONNE LE MEME RESULTAT, c'est une option 1 :                           
-    height: 200px;
-    width: 120px;
-    h120
-    margin: 5px;
-    float: left;
-
-    border-radius: 10% 5% 40% 0%;
-    border: 1px solid white;
-
-    text-align: center; */
-
-    /* height: 10em;
-    width: 10em;
-    float: left;
-    margin: 0.2em;
-
-    border: 0.2em solid white;
-    text-align: center;
-    border-radius: 10% 5% 40% 0%;
-} */
-
-/* .clear {
-    clear: both;
-} */
-
-
-
-/* Mon CSS pas fini */
-
-/* body {
-    background-color:greenyellow;
-    color: white;
-
-
-/* .clear {
-    clear: both;
-} */
-
-
-/* .block-01 {
-    width: 100px;
-    height: 100px;
-    background-color: pink;
-    float: left;
-    border-radius: 5px;
-    margin: 10px;
-    /* margin auto = autocentré */
-/* }
-
-
-.block-02 {
-    width: 100px;
-    height: 100px;
-    background-color: pink;
-    float: left;
-    border-radius: 5px;
-    margin: 10px;
-    /* margin auto = autocentré */
-/* } */
-
-/* .block-03 {
-    width: 100px;
-    height: 100px;
-    background-color: pink;
-    float: left;
-    border-radius: 5px;
-    margin: 10px;
-    /* margin auto = autocentré */
-

@@ -1,4 +1,6 @@
 
+
+
 /* les styles pour le premierSITE Vanusa Santos chantier Suresnes 2021-2022 */
 
 /* les typos Google Fonts utilisees dans le site : Anton (sans-serif), Oswald (sans -serif), Lemonada (manuscrite) */
@@ -47,37 +49,37 @@ time, mark, audio, video {
 
 /* *************************************************************** */
 
+/* 1e EXO CUBITUS 09/08/2021 : voir image correspondante pour suivre les commentaires */
 
-/* 1e EXO CUBITUS 09/08/2021 : voir image correspondante */
-/* le cubitus 1 - pisola Suresnes */
+/* CUBITUS 2 - CSS de Vanusa */
 
 body {
-    background-color: yellowgreen;
-    color: #fff;
-}
-
-.rose {
-    background-color: pink;
-}
-
-.corail {
-    background-color: lightcoral;
+    background-color: white;
+    color: black;
 }
 
 .c1, .c2 {
-    height: 10em;
-    width: 10em;
-    float: left;
-    margin: 5px;
 
-    border: 0.2em solid white;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    float: left;
+    border: 1px solid black;
+
+    border-radius: 15%;
+
     text-align: center;
-    border-radius: 10% 5% 40% 0%;
+}
+
+.vert {
+    background-color: greenyellow;
+}
+
+.bleu {
+    background-color: blue;
 }
 
 .clear {
     clear: both;
 }
-
-
-
+ 
