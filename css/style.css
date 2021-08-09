@@ -822,9 +822,49 @@ iframe[allowfullscreen] {
     background-color: #ffd6d6;
 }
 
+/* pour le ZONING 3 de Patrick - avec espace supl a regler avant footer */
 
 
-/* pour le zoning 3 */
+/* #zoning-3 {
+    width: 800px;
+    margin: auto;
+}
+
+#zoning-3 section {
+    width: 50%;
+    min-height: 400px;
+    float: left;
+}
+
+#zoning-3 .bleu {
+   background-color:blue;
+}
+
+#zoning-3 .rose {
+   background-color:pink;
+}
+
+#zoning-3 footer {
+   height: 150px;
+   background-color: rgb(235, 28, 62);
+}
+
+#zoning-3 footer  {
+   margin: 0;
+}
+
+#zoning-3 div {
+   height: 15px;
+   margin: 0;
+   padding: 0;
+   background-color: rgb(136, 72, 17);
+}
+ */
+
+/* fin zoning 3 de Patrick */
+
+
+/* ZONING 3 de VANUSA comme la maquette */
 
 #zoning-3 {
     width: 800px;
@@ -845,7 +885,7 @@ iframe[allowfullscreen] {
 
 #zoning-3 .section-droite {
     width: 50%;
-    height: 400px;
+    min-height: 400px;
     background-color: #2dd3e3;
     margin: 0;
     padding: 0;
@@ -869,6 +909,7 @@ iframe[allowfullscreen] {
     color: rgb(49, 49, 49);
     float: left;
 }
+
 
 
 /* ZONING 4 */
@@ -958,7 +999,7 @@ iframe[allowfullscreen] {
     color:#00e4d0;
     color: #0081be;
     color:#ddbdda;
-    color:#f9dead;
+    color:#f9dead;                     
     color:#f5f5f5;
     color:#90e177;
     color: #00ff00;

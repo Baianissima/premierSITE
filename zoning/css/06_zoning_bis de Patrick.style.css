@@ -1,0 +1,38 @@
+body {
+    background-image: url();
+}
+
+main {
+    width: 1200px;
+    margin: auto;
+    background: white;
+}
+
+section {
+    width: 50%;
+    float:left;
+    min-height: 600px;
+}
+
+.bleu {
+    background-color: red;
+}
+
+.clear {
+    clear: both;
+}
+
+footer {
+    background-color: pink;
+}
+
+footer p {
+    margin: 0;
+}
+
+div{
+    height: 15px;
+    margin: 0;
+    padding: 0;
+    background-color: peachpuff;
+}

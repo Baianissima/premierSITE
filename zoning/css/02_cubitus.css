@@ -1,0 +1,197 @@
+
+*
+
+/* les styles pour le premierSITE Vanusa Santos chantier Suresnes 2021-2022 */
+
+/* les typos Google Fonts utilisees dans le site : Anton (sans-serif), Oswald (sans -serif), Lemonada (manuscrite) */
+
+/* font-family:'Anton', sans-serif;
+font-family:'Lemonada', sans-serif;
+font-family:'Oswald', sans-serif;  */
+
+/* debut reset */
+
+/* @charset "UTF-8"; */
+
+/* ICI on utilise le RESET SIMPLE, non celui d Eric Meyer, qui est plus poussé  */
+/* l'étoile/astérisque signifie tout all */
+/* sinon on eut utiliser le reset d'Eric Meyer qui se trouve à cette adresse: http://meyerweb.com/eric/tools/css/reset/  */
+
+* {
+    box-sizing: border-box;
+}
+/* sans le box-sizingo ici les eleents ne flottent plus */
+/* ci dessus, on met tous les elements en box-sizing , border-box */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* fin reset simple */
+/* les typos goole font utilisees das le site */
+
+/* *************************************************************** */
+
+
+/* 1e EXO CUBITUS 09/08/2021 : voir image correspondante pour suivre les commentaires */
+
+/* CUBITUS 2 */
+
+/* CSS de Patrick  */
+/* body {
+    background-color: white;
+    color: aliceblue;
+}
+
+.c1, .c2 {
+    /* height: 200px;
+    width: 200px;
+    margin: 5px;
+    float: left;
+    margin: 5px;
+    */
+
+    /* height: 10em;
+    width: 10em;
+    float: left;
+    margin: 5px;
+    border: 0.2em solid black;
+
+    border-radius: 15%;
+    
+    text-align: center;
+}
+
+.vert {
+    background-color: green;
+}
+
+.bleu {
+    background-color: blue;
+}
+
+.clear {
+    clear: both;
+}
+ */
+
+/* CSS de Vanusa */
+body {
+    background-color: white;
+}
+
+.bleu {
+    background-color: blue;
+}
+
+.vert {
+    background-color: greenyellow;
+}
+
+.c1, .c2 {
+
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    float: left;
+    text-align: center;
+
+    border-radius: 15%;
+
+
+    .clear {
+        clear: both;
+    }
+    
+    .c1 p {
+        width: 50%;
+        margin: auto;
+    }
+
+    /* CE CODE DONNE LE MEME RESULTAT, c'est une option 1 :                           
+    height: 200px;
+    width: 120px;
+    h120
+    margin: 5px;
+    float: left;
+
+    border-radius: 10% 5% 40% 0%;
+    border: 1px solid white;
+
+    text-align: center; */
+
+    /* height: 10em;
+    width: 10em;
+    float: left;
+    margin: 0.2em;
+
+    border: 0.2em solid white;
+    text-align: center;
+    border-radius: 10% 5% 40% 0%;
+} */
+
+/* .clear {
+    clear: both;
+} */
+
+
+
+/* Mon CSS pas fini */
+
+/* body {
+    background-color:greenyellow;
+    color: white;
+
+
+/* .clear {
+    clear: both;
+} */
+
+
+/* .block-01 {
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    float: left;
+    border-radius: 5px;
+    margin: 10px;
+    /* margin auto = autocentré */
+/* }
+
+
+.block-02 {
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    float: left;
+    border-radius: 5px;
+    margin: 10px;
+    /* margin auto = autocentré */
+/* } */
+
+/* .block-03 {
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    float: left;
+    border-radius: 5px;
+    margin: 10px;
+    /* margin auto = autocentré */
+
