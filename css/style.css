@@ -911,7 +911,6 @@ iframe[allowfullscreen] {
 }
 
 
-
 /* ZONING 4 */
 
 
@@ -976,7 +975,78 @@ iframe[allowfullscreen] {
 }
 
 
-/* ZONING 5 */
+/* ZONING 5 * : c'est zoning 7 fait avec Patrick 10/08 /
+/* couleurs */
+
+body {
+    background-color: #eee8aa;
+    color: #fff;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+h1, p {
+    margin: 0;
+}
+
+#zoning-7 {
+    width: 800px;
+    margin: 0 auto;
+    background: orangered;
+}
+
+#zoning-7 header {
+    height: 80px;
+    background: #40a497;
+}
+
+#zoning-7 nav {
+    height: 30px;
+    background-color: #9a40a4;
+}
+
+#zoning-7 section {
+    height: 600px;
+    margin: 20px;
+    background-color: pink;
+}
+
+#zoning-7 .a, .b, .c, .d {
+    width: 50%;
+    height: 300px;
+    float: left;
+ 
+}
+
+#zoning-7 .a {
+    background-color: #40a497;
+}
+
+#zoning-7 .b {
+    background-color: #d69f1b;
+}
+
+#zoning-7 .c {
+    background-color: #b1b2d8;
+}
+
+#zoning-7 .d {
+    background-color: #1217f2;
+}
+
+footer {
+    background-color: green;
+    height: 80px;
+}
+
+
+
+
+
+
+
+/******** ZONING 5 ******** de la maquette initiale /
 /* couleurs */
 #zoning-5 {
     color: #d000ff;
