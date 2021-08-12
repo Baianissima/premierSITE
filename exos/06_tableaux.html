@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site d'apprentissage du HTML 5 et du CSS 3 - Colombbus Suresnes 2021">
+    <meta name="keywords" content="Premier site, Colombbus, Suresnes, l'agence Suresnes, HTML 5, CSS 3, Vanusa Santos, Vanusa, intégratrice Web, développeuse Web, Colombbus Suresnes">
+    <meta name="author" content="Vanusa Santos">
+    <title>06_tableaux</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lemonada&family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a1a0ce4d00.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            background-color:aquamarine;
+        }
+
+        main {
+            width: 80%;
+            background: whitesmoke;
+            margin: 0 auto;
+        }
+
+        table{
+            width: 800px;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid salmon;
+        }
+       
+        tfoot {
+            font-weight: bold;
+            text-align: center;
+        }
+        th, td {
+            padding: 10px;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+    <main>
+        <h1>2 tableaux</h1>
+        <h2>Un 1er tableau</h2>
+            <table>
+                <caption>1er tableau</caption>
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th colspan="2">Téléphone</th>
+                        <!-- colspan sert a fusionner les 2 rangées du titer telephone en une seule pour le mot telephone-->
+                    </tr>
+                </thead>
+
+                <tfoot>
+                    <tr>
+                        <td>Nom tfoot</td>
+                        <td colspan="2">Téléphone</td>
+                    </tr>
+                </tfoot>
+
+                <tbody>
+                    <tr>
+                        <td>Tata</td>
+                        <td>06 00 00 00 00</td>
+                        <td>01 00 00 00 00</td>
+                    </tr>
+                    <tr>
+                        <td>Yoyo</td>
+                        <td>06 00 00 00 00</td>
+                        <td>01 00 00 00 00</td>
+                    </tr>
+                   <!-- raccourici pour faire plusieurs rangées numérotées sur le tableau tr*58>td*3>{$} -->
+                   <tr>
+                       <td>1</td>
+                       <td>2</td>
+                       <td>3</td>
+                   </tr>
+                   
+                   <tr>
+                       <td>1</td>
+                       <td>2</td>
+                       <td>3</td>
+                   </tr>
+
+                   <tr>
+                       <td>1</td>
+                       <td>2</td>
+                       <td>3</td>
+                   </tr>
+
+                   <tr>
+                       <td>1</td>
+                       <td>2</td>
+                       <td>3</td>
+                   </tr>
+
+                   <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                   
+                </tbody>
+            </table>
+
+            <hr>
+
+            <h2>Second tableau</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Nom : </td>
+                        <td>Annie Cordy</td>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Téléphone</td>
+                        <td>04 95 3874 15</td>
+                    </tr>
+                    <tr>
+                        <td>04 95 3874 15</td>
+                    </tr>
+                </tbody>
+            </table>
+    
+    </main>
+</body>
+</html>

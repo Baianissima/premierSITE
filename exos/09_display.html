@@ -1,0 +1,144 @@
+
+09_display.html
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+
+    <style>
+        body {
+            background-color: lightgrey;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 0.8em;
+        }
+
+        main {
+            width: 80%;
+            margin: 0 auto;
+            padding: 10px;
+            background: #fff;
+        }
+
+        section {
+            margin-top: 30px;
+            padding: 10px;
+            border: 1px solid green;
+        }
+
+        p {
+            width: 80%;
+            margin: auto;
+        }
+
+        a {
+            background-color: orange;
+            color: white;
+        }
+
+        a:hover {
+            background-color: cornflowerblue;
+        }
+
+        /* la classe display-none */
+
+        .display-none {
+            display: none;
+        }
+
+        .rose {
+            background-color: pink;
+        }
+
+        .vert {
+            background: green;
+        }
+
+        .display-inline {
+            display: inline;
+
+        }
+
+        /* un element block prend toute la largeur du parent et fait un saut de ligne */
+        .display-block {
+            display: block;
+        }
+
+        /* lecture ici, avec le a sans espaces entre le point : "le a qui a la classe display-block" */
+        a.display-block {
+            height: 50px;
+            text-align: center;
+            line-height: 40px;
+        /* line-height centre l element verticalement */
+        }
+
+        /* ici on mélange les deux : inline et block */
+        .display-inline-block {
+            display: inline-block;
+        }
+
+        /* ici on dit que le A a la classe display-inline-block : donc le passe à block en hauteur et largeur définies ici */
+        a.display-inline-block {
+            height: 100px;
+            width: 100px;
+        }
+
+    </style>
+</head>
+    
+<body>
+    <main>
+        <h1>La proprieté Display</h1>
+        <!-- les in-line CODE, SPAN ne donnent pas de rendu, span sert surtout pour qu on rajoute une class -->
+
+        <!-- section 1 -->
+        <section class="rose">
+            <h2>1/ Display, comportement normal de chez normal</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur expedita et exercitationem eveniet quidem. Debitis placeat temporibus suscipit, ut quasi impedit laboriosam obcaecati id labore odio reiciendis nemo mollitia libero!</p>
+
+            <p>Je vais aller sur le site du journal <a href="https://www.lemonde.fr/">Le Monde</a> qui est un excellent journal du soir.</p>
+            <p>Je rajoute un p.</p>
+        </section>
+
+
+        <!-- section 2 : l'element n'est pas affiché -->
+        <section>
+            <h2>2/ Display none</h2>
+            <p class="display-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem praesentium necessitatibus vitae magnam repudiandae reprehenderit quasi culpa optio nisi voluptatibus consequatur, commodi, veniam quaerat repellendus cupiditate aperiam nostrum iure dicta.</p>
+
+            <p class="rose">Coucou les amis, un paragraphe !! Je rajoute un lien vers<a href="https://www.fip.fr/" class="display-none"> site de mon choix</a> et après ce lien je rajoute encore du texte.</p>
+        </section>
+
+        <!-- section 3 : affiche un élément en ligne, aucune proprieté de largeur ni de hauteur n'auront d'effets -->
+        <section>
+            <h2>3/ Display inline</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem praesentium necessitatibus vitae magnam repudiandae reprehenderit quasi culpa optio nisi voluptatibus consequatur, commodi, veniam quaerat repellendus cupiditate aperiam nostrum iure dicta.</p>
+
+            <p class="display-inline vert">Coucou les amis, un paragraphe !! Je rajoute un lien vers<a href="https://www.fip.fr/"> site de mon choix</a> et après ce lien je rajoute encore du texte.</p>
+            
+            <p class="rose">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur iure laborum sapiente architecto dolorem placeat minus accusantium harum, accusamus nulla ipsum repellendus explicabo inventore dolores cupiditate dolor. Error, quas excepturi.</p>
+        
+        </section>
+
+
+        <!-- section 4 : affiche un élément comme un block, il comment sur une nouvelle ligne et prend toutes la largeur / Ex. ici le strong devient block = saute à la ligne -->
+         <section>
+            <h2>4/ Display block</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem praesentium necessitatibus vitae magnam repudiandae reprehenderit quasi culpa optio nisi voluptatibus consequatur, commodi, <strong class="display-block vert">quaerat repellendus cupiditate quaerat repellendus cupiditate</strong>aperiam nostrum iure dicta.</p>
+
+            <p class="">Coucou les amis, un paragraphe !! Je rajoute un lien vers<a href="https://www.fip.fr/" class="display-block"> site de mon choix</a> et après ce lien je rajoute encore du texte.</p>
+
+
+        <!-- section 5 : un élément est formaté comme un élémént inline mais on peut lui donner des valeurs de hauteur et/ou de largeur -->
+        <section>
+            <h2>5/ Display inline-block</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem praesentium necessitatibus vitae magnam repudiandae reprehenderit quasi culpa optio nisi voluptatibus consequatur, commodi, veniam quaerat repellendus cupiditate aperiam nostrum iure dicta.</p>
+
+            <p class="">Coucou les amis, un paragraphe !! Je rajoute un lien vers<a href="https://www.fip.fr/" class="display-inline-block"> site de mon choix</a> et après ce lien je rajoute encore du texte.</p>
+        </section>
+    </main>
+</body>
+</html>

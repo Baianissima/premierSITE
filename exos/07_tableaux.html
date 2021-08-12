@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site d'apprentissage du HTML 5 et du CSS 3 - Colombbus Suresnes 2021">
+    <meta name="keywords" content="Premier site, Colombbus, Suresnes, l'agence Suresnes, HTML 5, CSS 3, Vanusa Santos, Vanusa, intégratrice Web, développeuse Web, Colombbus Suresnes">
+    <meta name="author" content="Vanusa Santos">
+    <title>07_tableaux</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lemonada&family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a1a0ce4d00.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            background-color:white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+
+        main {
+            width: 80%;
+            padding: 10px;
+            background: whitesmoke;
+            margin: 0 auto;
+            /* auto-centré avec margin 0 auto */
+        }
+
+        h1, h2 {
+            text-align: center;
+
+        }
+
+        /* Les styles pour le tableau avec la classe "adresses"  */
+
+        table.adresse {
+            /* semanthyique = ce table qui a la classe "adresses" */
+            margin: auto;
+            width: 80%;
+            padding: 10px;
+            border-collapse: collapse;
+            /* border: 5px solid red; */
+        }
+
+        table.adresse, .adresse, td {
+            border: 1px solid rgb(236, 21, 103);
+        }
+       
+        
+        th, td {
+            padding: 10px;
+        }
+
+        .adresse caption {
+            background-color: aquamarine;
+            height: 60px;
+            line-height: 60px;
+            /* line-height : hauteur de la ligne identique à la hauteur du parent, a pour effet de centrer verticalement, mais qd on met un p le centrage ne marche pas */
+            
+            border-top: 1px solid rgb(236, 21, 103);
+            border-left: 1px solid rgb(236, 21, 103);
+            border-right: 1px solid rgb(236, 21, 103);
+
+            font-size: 1.5em;
+            color: white;
+        }
+
+        .adresse thead {
+           font-weight: bold;
+        }
+
+        .adresse thead {
+            background-color: lightpink;
+            font-weight: bold;
+        }
+
+        .adresse td {
+            padding: 10px;
+        }
+
+        /* even = pair /// odd = impair /// Ici tous les TR discriminés prennent une couleur differente */
+
+        .adresse tr:nth-child(odd):not(:only-child) {
+            background-color: rgba(173, 223, 240, 0.829);
+        /* avec ça, on n'a plus besoin d'un id poru ce TR pour cibler la couleur de cette partie  */
+        }
+
+        .adresse tr:nth-child(even) {
+            background-color: rgba(29, 110, 138, 0.829);
+        }
+
+        /* ici Patrcik a fait un reset su p comme ça */
+        .adresse p {
+            margin: 0;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <main>
+        <h1>Tableau HTML : mes magasins préferés</h1>
+            <table class="adresse">
+                <caption>
+                    <p>Adresses // Fournisseurs</p>
+                    <!-- <p>avec ce deuximee p line-height ne fonctionne pas</p> -->
+                </caption>
+                <thead>
+                    <tr>
+                        <th>Cie</th>
+                        <th>Contact</th>
+                        <th>Adresse</th>
+                    </tr>
+                </thead>
+                <!-- tr*6>S -->
+                <tbody>
+                    <tr>
+                        <td>Cellule 1</td>
+                        <td>Cellule 2</td>
+                        <td>Cellule 3</td>
+                    </tr>
+                    <tr>
+                        <td>Cellule 1</td>
+                        <td>Cellule 2</td>
+                        <td>Cellule 3</td>
+                    </tr>
+
+                    <tr>
+                        <td>Cellule 1</td>
+                        <td>Cellule 2</td>
+                        <td>Cellule 3</td>
+                    </tr>
+
+                    <tr>
+                        <td>Cellule 1</td>
+                        <td>Cellule 2</td>
+                        <td>Cellule 3</td>
+                    </tr>
+
+                    <tr>
+                        <td>Cellule 1</td>
+                        <td>Cellule 2</td>
+                        <td>Cellule 3</td>
+                    </tr>
+
+                    <tr>
+                        <td>Cellule 1</td>
+                        <td>Cellule 2</td>
+                        <td>Cellule 3</td>
+                    </tr>
+                    <tr>
+                        <td>Cellule 1</td>
+                        <td>Cellule 2</td>
+                        <td>Cellule 3</td>
+                    </tr>
+
+                    <tr>
+                        <td>Cellule 1</td>
+                        <td>Cellule 2</td>
+                        <td>Cellule 3</td>
+                    </tr>
+                   
+                </tbody>
+            </table>
+
+            <hr>
+
+            <h2>Second tableau</h2>
+            <table>
+                <caption>
+                    <p>tableau 2</p>
+                </caption>
+                <tr>
+                    <td>texte 1</td>
+                    <td>texte 2</td>
+                    <td>texte 3</td>
+                    <td>texte 4</td>
+                </tr>
+                <tr>
+                    <td>texte 1</td>
+                    <td>texte 2</td>
+                    <td>texte 3</td>
+                    <td>texte 4</td>
+                </tr>
+                <tr>
+                    <td>texte 1</td>
+                    <td>texte 2</td>
+                    <td>texte 3</td>
+                    <td>texte 4</td>
+                </tr>
+                <tr>
+                    <td>texte 1</td>
+                    <td>texte 2</td>
+                    <td>texte 3</td>
+                    <td>texte 4</td>
+                </tr>
+            </table>    
+    </main>
+</body>
+</html>
