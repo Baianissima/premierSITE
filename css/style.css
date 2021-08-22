@@ -180,7 +180,7 @@ height: 70px;
 padding: 15px;
 
 background-color: #2980b9;
-border-bottom: 8px solid #6acafc;
+/* border-bottom: 8px solid #6acafc; */
 /* border-bottom : une bordure en bas */
 
 text-align: center;
@@ -202,7 +202,7 @@ border-radius: 10px 0px;
 font-family: 'Oswald', sans-serif;
 color: #2c3e50;
 text-decoration: none;
-font-size: 16x;
+font-size: 16px;
 /* ici transition pour controler la duree sur l envol en changement de couleur de nav a:hover */
 transition: 0.5s;
 }
@@ -911,7 +911,7 @@ iframe[allowfullscreen] {
 }
 
 
-/* ZONING 4 */
+/* ZONING 4 fait selon la maquette par Vanusa */
 
 
 #zoning-4 {
@@ -923,14 +923,14 @@ iframe[allowfullscreen] {
 }
 
 #zoning-4 header {
-    width: 700px;
+    
     height: 98px;
     background-color: #00ff00;
 }
 
 #zoning-4 .section-1 {
     width: 700px;
-    height: 40px;
+    height: 50px;
     background-color:#0081be;
     float: left;
     margin: 0;
@@ -939,7 +939,7 @@ iframe[allowfullscreen] {
 
 #zoning-4 .section-2 {
     width: 700px;
-    height: 5px;
+    height: 30px;
     background-color: #41ccff;
     float: left;
     margin: 0;
@@ -970,85 +970,88 @@ iframe[allowfullscreen] {
     margin: auto;
     color:rgb(49, 49, 49);
     background-color: #ffe4af;
-    float: left;
-   
+    float: left; 
 }
 
 
-/* ZONING 5 * : c'est zoning 7 fait avec Patrick 10/08 /
-/* couleurs */
-
-body {
+/* ZONING 5 * : c'est le zoning 7 fait avec Patrick 10/08 */
+/* 
+#body du zoning-7 {
     background-color: #eee8aa;
-    color: #fff;
+    /* color: #fff;
     text-align: center;
     font-size: 1.2em;
     margin: 0;
-}
+} */
 
-h1, p {
-    margin: 0;
-}
-
-#zoning-7 {
+#zoning-5 {
     width: 800px;
     margin: 0 auto;
     background: orangered;
+    text-align: center;
+    font-size: 1.2em;
+    color: white;  
 }
 
-#zoning-7 header {
+#zoning-5 header {
     height: 80px;
     background: #40a497;
 }
 
-#zoning-7 nav {
+#zoning-5 nav {
     height: 30px;
     background-color: #9a40a4;
+    box-sizing: content-box;
+    padding: 0;
+    /* ici content-box regle le conflit avec box-sizing: auto du style general et pagging 0 aussi : pour integrer la nav confrme la maquette; */
 }
 
-#zoning-7 section {
+#zoning-5 section {
+    width: 760px;
     height: 600px;
     margin: 20px;
-    background-color: pink;
+    padding: 0;
+    /* float: left; */
 }
 
-#zoning-7 .a, .b, .c, .d {
+#zoning-5 p {
+    margin: 0;
+    padding: 0;
+}
+
+#zoning-5 .a, .b, .c, .d {
     width: 50%;
     height: 300px;
     float: left;
- 
 }
 
-#zoning-7 .a {
+#zoning-5 .a {
     background-color: #40a497;
 }
 
-#zoning-7 .b {
+#zoning-5 .b {
     background-color: #d69f1b;
 }
 
-#zoning-7 .c {
+#zoning-5 .c {
     background-color: #b1b2d8;
 }
 
-#zoning-7 .d {
+#zoning-5 .d {
     background-color: #1217f2;
 }
 
-footer {
+#zoning-5 footer {
     background-color: green;
     height: 80px;
+    padding: 0;
 }
-
-
-
-
 
 
 
 /******** ZONING 5 ******** de la maquette initiale /
 /* couleurs */
-#zoning-5 {
+/* #zoning-5 {
     color: #d000ff;
     color: #e661bf;
     color: #333333;
@@ -1058,12 +1061,12 @@ footer {
     color: #006f84;
     color: #fed75d;
 }
+ */
 
 
-
-/* ZONING 6 */
+/****** ZONING 6 * ******** de la maquette initiale /
 /* couleurs */
-#zoning-6 {
+/* #zoning-6 {
     color:#ff5538;
     color: #008281;
     color:#00e4d0;
@@ -1076,29 +1079,13 @@ footer {
     color: #f500ff;
     color: #ffa200;
     color: #ff0062;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+} */
 
 
 
 /* zoning 3 de MIREDI */
-
-
-
 /* main */
+
 /* #zoning-3 {
     width: 800px;
     height: 500px;
