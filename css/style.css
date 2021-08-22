@@ -17,8 +17,8 @@ font-family:'Oswald', sans-serif;  */
 * {
     box-sizing: border-box;
 }
-/* sans le box-sizingo ici les eleents ne flottent plus */
-/* ci dessus, on met tous les elements en box-sizing , border-box */
+/* sans le "box-sizing: border-box" ici les elements ne flottent plus */
+/* ci dessus, on met tous les elements en box-sizing, border-box */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -42,7 +42,7 @@ time, mark, audio, video {
 }
 
 /* fin reset simple */
-/* les typos goole font utilisees das le site */
+/* les typos google Fonts utilisees dans le site */
 
 body {
 /* background-color: aquamarine; */
@@ -114,7 +114,7 @@ vertical-align: middle;
 
 /* A compléter position */
 
-/* Header */
+/* header */
 
 header {
 height: 175px;
@@ -164,7 +164,7 @@ text-align: right;
 clear: both;
 }
 
-/* ce lundi 26/07 on a fait du reset sur css, class clear et flaot pour mettre les elements du header cote a cote  */
+/* ce lundi 26/07 on a fait du reset sur css, class clear et float pour mettre les elements du header cote a cote  */
 
 /* ici sur HEADER A, la lecture est: "tous les liens à lecture du header sont non-soulignés" */
 
@@ -174,7 +174,8 @@ color: #10828c;
 }
 /* fin header */
 
-/* la nav, la navigation */
+/* LA NAV, la navigation */
+
 nav {
 height: 70px;
 padding: 15px;
@@ -257,8 +258,7 @@ footer {
     height: 50px;
     margin-top: 10px;
     padding: 10px;
-    background-color: #2980b9;  
-
+    background-color: #2980b9;
     text-align: center;
     color: #fff;  
 }
@@ -350,7 +350,7 @@ selection #zone-d span {
 
 /* fin page des sélecteurs */
 
-/* page des images */
+/* PAGE DES IMAGES */
 
 .img-fond {
     margin-bottom: 20px;
@@ -401,17 +401,15 @@ img[src="img/toureiffel.jpg"] {
     transform: rotate(-360deg);
 }
 
-
 /* fin page des images */
 
-
-/* Ici, le CLEAR pour retablir le flux */
+/* Ici, la classe CLEAR pour retablir le flux */
 
 .clear {
     clear: both;
 }
 
-/* page tableau */
+/* PAGE TABLEAU */
 
 .tableau table, .tableau td {
     border: 2px solid #205D67;
@@ -974,7 +972,7 @@ iframe[allowfullscreen] {
 }
 
 
-/* ZONING 5 * : c'est le zoning 7 fait avec Patrick 10/08 */
+/* ZONING 5 * : c'est le zoning 7 fait avec Patrick 10/08, je l'ai intégré et nomé Zonning 5 sur le site */
 /* 
 #body du zoning-7 {
     background-color: #eee8aa;
@@ -988,9 +986,9 @@ iframe[allowfullscreen] {
     width: 800px;
     margin: 0 auto;
     background: orangered;
+    color: white;
     text-align: center;
-    font-size: 1.2em;
-    color: white;  
+    font-size: 1.2em;  
 }
 
 #zoning-5 header {
@@ -1001,7 +999,8 @@ iframe[allowfullscreen] {
 #zoning-5 nav {
     height: 30px;
     background-color: #9a40a4;
-    box-sizing: content-box;
+    margin-top: 0;
+    /* box-sizing: content-box; */
     padding: 0;
     /* ici content-box regle le conflit avec box-sizing: auto du style general et pagging 0 aussi : pour integrer la nav confrme la maquette; */
 }
@@ -1049,9 +1048,7 @@ iframe[allowfullscreen] {
 
 
 
-/******** ZONING 5 ******** de la maquette initiale /
-/* couleurs */
-/* #zoning-5 {
+/******** Couleurs du ZONING 5 de la maquette initiale /
     color: #d000ff;
     color: #e661bf;
     color: #333333;
@@ -1061,7 +1058,25 @@ iframe[allowfullscreen] {
     color: #006f84;
     color: #fed75d;
 }
- */
+
+
+/* ZONING 6 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /****** ZONING 6 * ******** de la maquette initiale /
@@ -1080,6 +1095,22 @@ iframe[allowfullscreen] {
     color: #ffa200;
     color: #ff0062;
 } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
