@@ -976,11 +976,23 @@ iframe[allowfullscreen] {
 /* 
 #body du zoning-7 {
     background-color: #eee8aa;
+<<<<<<< Updated upstream
     /* color: #fff;
     text-align: center;
     font-size: 1.2em;
     margin: 0;
 } */
+=======
+    color: #fff;
+    /* text-align: center; */
+    font-size: 1.2em;
+    margin: 0;
+}
+
+#zoning-7 h1, p {
+    margin: 0;
+}
+>>>>>>> Stashed changes
 
 #zoning-5 {
     width: 800px;
@@ -1040,7 +1052,11 @@ iframe[allowfullscreen] {
     background-color: #1217f2;
 }
 
+<<<<<<< Updated upstream
 #zoning-5 footer {
+=======
+#zoning-7 footer {
+>>>>>>> Stashed changes
     background-color: green;
     height: 80px;
     padding: 0;
@@ -1134,6 +1150,7 @@ iframe[allowfullscreen] {
 }
  */
 
+<<<<<<< Updated upstream
 
 
 
@@ -1257,3 +1274,103 @@ iframe[allowfullscreen] {
     }   
 }
  
+=======
+/* TERMINER ZONING LINDI 06/09 */
+
+/* Page Position */
+
+.centre {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: #6acafc;
+}
+
+/* div en position absolute */
+
+.absolute {
+    width: 100px;
+    height: 100px;
+
+    top: 25%;
+    left: 10%;
+    position: absolute;
+    background-color: yellow;
+}
+
+/* div en position relative */
+
+.bordure-2 {
+    border: 5px solid green;
+}
+
+.relative {
+    /* position RELATIVE au parent dans lequel se trouve la div, ici la section */
+    width: 400px;
+    height: 400px;
+    background-color: #2980b9;
+    position: relative;
+    left: 100px;
+    bottom: 100px;
+    /* carre bleu en position relative par rapport à la section, son parent */
+}
+
+/* Cette div est en position ABSOLUTE dans un élément relatif et sa position est absolute par rapport à cet élément, l'origine est l'element parent */
+.relative div {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.trente {
+    font-size: 22px;
+    width: 30%;
+    background: red;
+    padding: 20px;
+    color: #10828c;
+}
+
+.cinquante {
+    font-size: 22px;
+    width: 50%;
+    background: orange;
+    padding: 20px;
+    color: white;
+}
+
+.cent {
+    font-size: 22px;
+    width: 100%;
+    background: pink;
+    padding: 20px;
+    color:green;
+}
+
+.float {
+    float: left;
+    height: 170px;
+    width: 170px;
+    margin: 10px;
+
+    border: 2px solid darkred;
+    background: #FFF1A8;
+    text-align: center;
+    font-size: 25px;
+}
+
+.dernier-carre {
+    height: 170px;
+    width: 170px;
+    margin: 10px;
+
+    border: 2px solid darkred;
+    background: #FFF1A8;
+    text-align: center;
+    font-size: 25px;
+}
+
+/* On a arreté le 13/08 sur PAGE POSITION à la section PROPRIETE FLOAT  */
+>>>>>>> Stashed changes

@@ -84,9 +84,59 @@
         <section>
             <h2>Page Position  <i class="fas fa-crosshairs"></i></h2>
         </section>
+
+		<section>
+			<h3>Centrer un élément de type block</h3>
+			<div class="centre">N° 1</div>
+		</section>
+
+		<section>
+			<h3>Position absolute</h3>
+			<p>N° 2 : un carré jaune : eh regardez en haut à gauche (ou cf. le bouton retour haut de page)</p>
+			<!-- un element positionnée de façon absolue est un element dont la propriete de position calculee est ABSOLUTE ou FIXED : https://developer.mozilla.org/fr/docs/Web/CSS/position -->
+			<div class="absolute">N° 2</div>
+		</section>
+
+		<section class="bordure-2">
+			<!-- section>h3+div.relative>div{n°3} : -->
+			<h3>Position relative</h3>
+			<div class="relative">
+				<div>N° 3</div>
+			</div>
+		</section>
+
+	<!--  : ici ces br aident a voir qu il n est pas bottom par rapport au bas de la page ??? -->
+
+		<section>
+			<h3>Position fixed</h3>
+			<p>cf. le bouton vers le haut (en bas à droite)</p>
+		</section>
+
+		<section>
+			<h3>Le pourcentage</h3>
+			<div class="trente">30%</div>
+			<div class="cinquante">50%</div>
+			<div class="cent">100%</div>
+		</section>
+
+		<!-- section>h3+div.float{$}*10 -->
+		<section>
+			<h3>La propriété float</h3>
+			<div class="float">1</div>
+			<div class="float">2</div>
+			<div class="float">3</div>
+			<div class="float">4</div>
+			<div class="float clear">5</div>
+			<div class="float">6</div>
+			<div class="float">7</div>
+			<div class="float clear">8</div>
+			<div class="float">9</div>
+			<div class="clear dernier-carre">10</div>
+		</section>
+	
     </main>
     <footer>
-        <!-- pour les aracteres spécieux nous avons besoin de les coder cf. http://dev.w3.org/html5-author/charref -->
+        <!-- pour les caracteres spécieux nous avons besoin de les coder cf. http://dev.w3.org/html5-author/charref-->
         <p>&copy; L'agence Suresnes 2021</p>
     </footer>Ò
     <!--fin footer-->
