@@ -982,17 +982,11 @@ iframe[allowfullscreen] {
     font-size: 1.2em;
     margin: 0;
 } */
-=======
-    color: #fff;
-    /* text-align: center; */
-    font-size: 1.2em;
-    margin: 0;
-}
 
-#zoning-7 h1, p {
+
+#zoning-5 h1, p {
     margin: 0;
 }
->>>>>>> Stashed changes
 
 #zoning-5 {
     width: 800px;
@@ -1052,11 +1046,7 @@ iframe[allowfullscreen] {
     background-color: #1217f2;
 }
 
-<<<<<<< Updated upstream
 #zoning-5 footer {
-=======
-#zoning-7 footer {
->>>>>>> Stashed changes
     background-color: green;
     height: 80px;
     padding: 0;
@@ -1149,9 +1139,6 @@ iframe[allowfullscreen] {
     text-align: center;
 }
  */
-
-<<<<<<< Updated upstream
-
 
 
  /****** PAGE ANIMATION ******/
@@ -1274,8 +1261,8 @@ iframe[allowfullscreen] {
     }   
 }
  
-=======
-/* TERMINER ZONING LINDI 06/09 */
+
+/* TERMINER ZONING LUNDI 06/09 */
 
 /* Page Position */
 
@@ -1373,4 +1360,3 @@ iframe[allowfullscreen] {
 }
 
 /* On a arreté le 13/08 sur PAGE POSITION à la section PROPRIETE FLOAT  */
->>>>>>> Stashed changes
