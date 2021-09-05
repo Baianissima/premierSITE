@@ -1086,23 +1086,6 @@ iframe[allowfullscreen] {
 } */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* zoning 3 de MIREDI */
 /* main */
 
@@ -1113,7 +1096,6 @@ iframe[allowfullscreen] {
     background-color: pink;
 }
 
-
 #zoning-3 aside {
     width: 400px;
     height: 300px;
@@ -1121,7 +1103,6 @@ iframe[allowfullscreen] {
     background-color: lightblue;
     text-align: center;
 }
-
 
 .h4 {
     float: left;
@@ -1139,6 +1120,80 @@ iframe[allowfullscreen] {
     text-align: center;
 }
  */
+
+
+
+
+/* ZONING 6 * : copie du 5 pour corriger a pres */
+
+#zoning-5 h1, p {
+    margin: 0;
+}
+
+#zoning-5 {
+    width: 800px;
+    margin: 0 auto;
+    background: orangered;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;  
+}
+
+#zoning-5 header {
+    height: 80px;
+    background: #40a497;
+}
+
+#zoning-5 nav {
+    height: 30px;
+    background-color: #9a40a4;
+    margin-top: 0;
+    /* box-sizing: content-box; */
+    padding: 0;
+    /* ici content-box regle le conflit avec box-sizing: auto du style general et pagging 0 aussi : pour integrer la nav confrme la maquette; */
+}
+
+#zoning-5 section {
+    width: 760px;
+    height: 600px;
+    margin: 20px;
+    padding: 0;
+    /* float: left; */
+}
+
+#zoning-5 p {
+    margin: 0;
+    padding: 0;
+}
+
+#zoning-5 .a, .b, .c, .d {
+    width: 50%;
+    height: 300px;
+    float: left;
+}
+
+#zoning-5 .a {
+    background-color: #40a497;
+}
+
+#zoning-5 .b {
+    background-color: #d69f1b;
+}
+
+#zoning-5 .c {
+    background-color: #b1b2d8;
+}
+
+#zoning-5 .d {
+    background-color: #1217f2;
+}
+
+#zoning-5 ooter {
+    background-color: green;
+    height: 80px;
+    padding: 0;
+}
+
 
 
  /****** PAGE ANIMATION ******/
