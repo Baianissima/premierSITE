@@ -1,0 +1,163 @@
+
+/* ZONING 8 */
+
+body {
+    background-color:#d3d3d3;
+}
+
+.clear {
+    clear:both;
+}
+
+/* ici c'est reset du p sur zoning 8, faut voir ce que ça donne sur PREMIER SITE */
+p {
+    margin: 0;
+}
+
+#zoning-8 {
+    width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    color: #333;
+    text-align: center;
+}
+
+/* en-tête avec les trois parties hautes */
+#zoning-8 header {
+    height: 200px;
+}
+
+#zoning-8 .haut-1 {
+    float: left;
+    width: 25%;
+    height: 100%;
+    background-color: #ff6347;  
+}
+
+#zoning-8 .haut-2 {
+    width: 50%;
+    float: left;
+    height: 100%;
+    background-color:  #008080;  
+ }
+
+ #zoning-8 .haut-3 {
+    width: 25%;
+    float: left;
+    height: 100%;
+    background-color: #40e0d0;  
+ }
+
+/*navigation */
+#zoning-8 nav {
+    height: 100px;
+    background-color: #add8e6;
+}
+
+/* zone lattérale */
+#zoning-8 aside {
+    float: left;
+    width: 25%;
+    height: 500px;
+    background-color: #d8bfd8;
+}
+
+#zoning-8 section {
+    float: left;
+    width: 75%;
+}
+    
+/* zone principale */
+#zoning-8 .zone-a {
+    float: left;
+    width: 50%;
+    height: 200px;
+    background-color: #f5deb3;
+}
+
+#zoning-8 .zone-b {
+    float: left;
+    width: 50%;
+    height: 200px;
+    background-color:  #f5f5f5;
+}  
+
+/* zone du diaporama */
+#zoning-8 .diaporama {
+    background-color:#a3de83;
+    height: 200px;
+}
+
+/* zone section 3 */
+#zoning-8 .zone-c {
+    float: left;
+    background-color: #32ff32;
+    width: 25%;
+    height: 100px;
+}
+
+#zoning-8 .zone-d {
+    float: left;
+    background-color: #e032ff;
+    width: 25%;
+    height: 100px;
+}
+
+#zoning-8 .zone-e {
+    float: left;
+    background-color:#ffa632;
+    width: 25%;
+    height: 100px;
+}
+
+#zoning-8 .zone-f {
+    float: left;
+    background-color:#ff3265;
+    width: 25%;
+    height: 100px;
+}
+
+/* zone bas de page */
+#zoning-8 footer {
+    background-color: #0b5269;
+    /* min-height: 100px; */
+}
+
+
+
+
+
+
+
+
+/* couleurs pour le zoning 8
+
+Couleur du background : #d3d3d3
+
+Haut 1 : #ff6347
+
+Haut 2 : #008080
+
+Haut 3 : #40e0d0
+
+Menu Nav : #add8e6
+
+Zone à gauche : #d8bfd8
+
+Zone A : #f5deb3
+
+Zone B : #f5f5f5
+
+Diaporama : #a3de83
+
+Zone C : #32ff32
+
+Zone D : #e032ff
+
+Zone E : #ffa632
+
+Zone F : #ff3265
+
+Bas ou Footer : #0b5269  */
+
+ 

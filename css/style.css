@@ -1053,7 +1053,6 @@ iframe[allowfullscreen] {
 }
 
 
-
 /******** Couleurs du ZONING 5 de la maquette initiale /
     color: #d000ff;
     color: #e661bf;
@@ -1122,81 +1121,241 @@ iframe[allowfullscreen] {
  */
 
 
-
-
 /* ZONING 6 * : copie du 5 pour corriger a pres */
 
-#zoning-5 h1, p {
-    margin: 0;
-}
+/* ici c'est reset du p sur zoning 8, faut voir ce que ça donne sur PREMIER SITE */
 
-#zoning-5 {
+#zoning-6 {
     width: 800px;
     margin: 0 auto;
-    background: orangered;
+    background-color: lightgrey;
     color: white;
     text-align: center;
-    font-size: 1.2em;  
 }
 
-#zoning-5 header {
-    height: 80px;
-    background: #40a497;
+/* en-tête avec les trois parties hautes */
+#zoning-6 header {
+    height: 200px;
 }
 
-#zoning-5 nav {
-    height: 30px;
-    background-color: #9a40a4;
-    margin-top: 0;
-    /* box-sizing: content-box; */
-    padding: 0;
-    /* ici content-box regle le conflit avec box-sizing: auto du style general et pagging 0 aussi : pour integrer la nav confrme la maquette; */
+/* zone section 1 */
+
+#zoning-6 .haut-1 {
+    float: left;
+    width: 25%;
+    height: 100%;
+    background-color: #ff6347;  
 }
 
-#zoning-5 section {
-    width: 760px;
-    height: 600px;
-    margin: 20px;
-    padding: 0;
-    /* float: left; */
+#zoning-6 .haut-2 {
+    width: 50%;
+    float: left;
+    height: 100%;
+    background-color:  #008080;  
+ }
+
+ #zoning-6 .haut-3 {
+    width: 25%;
+    float: left;
+    height: 100%;
+    background-color: #40e0d0;  
+ }
+
+/*navigation */
+#zoning-6 nav {
+    height: 100px;
+    background-color: #add8e6;
 }
 
-#zoning-5 p {
+/* zone lattérale */
+#zoning-6 aside {
+    float: left;
+    width: 25%;
+    height: 500px;
+    background-color: #d8bfd8;
+}
+
+#zoning-6 section {
+    float: left;
+    width: 75%;
     margin: 0;
     padding: 0;
 }
-
-#zoning-5 .a, .b, .c, .d {
-    width: 50%;
-    height: 300px;
+    
+/* zone principale */
+#zoning-6 .zone-a {
     float: left;
+    width: 50%;
+    height: 200px;
+    background-color: #f5deb3;
 }
 
-#zoning-5 .a {
-    background-color: #40a497;
+#zoning-6 .zone-b {
+    float: left;
+    width: 50%;
+    height: 200px;
+    background-color: lightskyblue;
+}  
+
+/* zone du diaporama */
+#zoning-6 .diaporama {
+    background-color:#a3de83;
+    height: 200px;
 }
 
-#zoning-5 .b {
-    background-color: #d69f1b;
+/* zone section 3 */
+#zoning-6 .zone-c {
+    float: left;
+    background-color: #32ff32;
+    width: 25%;
+    height: 100px;
 }
 
-#zoning-5 .c {
-    background-color: #b1b2d8;
+#zoning-6 .zone-d {
+    float: left;
+    background-color: #e032ff;
+    width: 25%;
+    height: 100px;
 }
 
-#zoning-5 .d {
-    background-color: #1217f2;
+#zoning-6 .zone-e {
+    float: left;
+    background-color:#ffa632;
+    width: 25%;
+    height: 100px;
 }
 
-#zoning-5 ooter {
-    background-color: green;
-    height: 80px;
-    padding: 0;
+#zoning-6 .zone-f {
+    float: left;
+    background-color:#ff3265;
+    width: 25%;
+    height: 100px;
+}
+
+/* zone bas de page */
+#zoning-6 footer {
+    margin:0;
+    background-color: #0b5269;
+    min-height: 100px;
+}
+
+
+/****** PAGE ANIMATION ******/
+
+.info-bulle {
+    height: 250px;
+    width: 500px;
+    margin: auto;
+    padding: 15px;
+    background: #444;
+}
+
+.info-bulle p {
+   text-align: center;
+   padding-top: 30px;
+}
+
+.info-bulle a {
+    padding: 5px 15px;
+    /* le contour du a que l'on voit sur le hover */
+    border-radius: 3px;
+    color: lightgrey;
+    text-decoration: none;
+    text-shadow: 0 -2px 0 black;
+ }
+
+ .info-bulle a:hover {
+    background: rgb(0 , 0, 0, 0.4);
+    color: white;
+    text-shadow: 0 1px 2px black;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+ }
+
+ .info-bulle a span {
+    position: absolute;
+    padding: 15px;
+    margin-top: 23px;
+    margin-left: -35px;
+    background: rgba(0, 0, 0, .9);
+    /* Le contenu de span disparaît grâce à cette ligne */
+    opacity: 0;
+
+    color: #09c;
+    transition: .25s;
+    /* Le contenu de span disparaît AUSSI grâce à cette ligne */
+    transform: scale(0) rotateZ(-12deg);
+    border-radius: 13px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .5);
+ }
+
+.info-bulle a:hover span {
+    /* Et on fait reaparaître span */
+    opacity: 1;
+    transform: scale(1) rotate(0);
+}
+
+.info-bulle a span:before {
+    /* ici before fait ajouter le mot AVANT ou les XXXXX comme exemple, avant le texte */
+    content: ' ';
+    /* ici la position absolute met le mot pour before en ligne supérieur */
+    position: absolute;
+    top: -6px;
+    left: 10px;
+    
+    border-bottom: 6px solid rgba(255, 255, 255, 0.9);
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+}
+
+/* Effets (sur des images) survol avec des transitions et des filtres */
+
+.img-effets {
+    width: 302px;
+    height: 320px;
+    margin: 70px auto;
+}
+
+.img-effets li {
+    list-style: none;
+    float: left;
+    width: 141px;
+    height: 150px;
+    margin: 5px;
+}
+
+.img-effets li:nth-child(3) {
+    /* La dernière des 4 li (on commence à compter à 0) reprend sa position dans le flux */
+    clear:both;
+}
+
+.img-effets img {
+    position: absolute;
+    /* toutes les images sont impilées en bas */
+    z-index: 1;
+    /* on cale l'image dans un bloc de 150px, même hauteur que la li */
+    height: 150px;
+    box-shadow: 0 0 3px black;
+    /* la transition fonctionne avec un transform sur le hover du li */
+    transition: .5s subic-bezier(0,3,.4,1);
+}
+
+.img-effets li:hover img {
+    /* l'image sur le hover passe au premier plan car le z-index est à 0 */
+    z-index: 2;
+    /* transform peut fonctionner sans transition - sans le transform les images ne bougent pas */
+    transform: scale(1.5);
+    box-shadow: 0 0 10px red;
+}
+
+.img-effets:hover li:not(:hover) img {
+    /* on met en niveau de gris ce qui n'est pas survolé=ce qui n'est pas hover - avec blur on met aussi en flou */
+    filter: grayscale(1) blur(5px);
 }
 
 
 
- /****** PAGE ANIMATION ******/
+
+/* EXO PERSO : */
 
  /* REBOND */
  .rebond {
@@ -1415,3 +1574,129 @@ iframe[allowfullscreen] {
 }
 
 /* On a arreté le 13/08 sur PAGE POSITION à la section PROPRIETE FLOAT  */
+
+/* ZONING 6 * : intégration du zoning 8 /
+
+body {
+    background-color:#d3d3d3;
+}
+
+.clear {
+    clear:both;
+}
+
+/* ici c'est reset du p sur zoning 8, faut voir ce que ça donne sur PREMIER SITE */
+p {
+    margin: 0;
+}
+
+#zoning-8 {
+    width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    color: #333;
+    text-align: center;
+}
+
+/* en-tête avec les trois parties hautes */
+#zoning-8 header {
+    height: 200px;
+}
+
+#zoning-8 .haut-1 {
+    float: left;
+    width: 25%;
+    height: 100%;
+    background-color: #ff6347;  
+}
+
+#zoning-8 .haut-2 {
+    width: 50%;
+    float: left;
+    height: 100%;
+    background-color:  #008080;  
+ }
+
+ #zoning-8 .haut-3 {
+    width: 25%;
+    float: left;
+    height: 100%;
+    background-color: #40e0d0;  
+ }
+
+/*navigation */
+#zoning-8 nav {
+    height: 100px;
+    background-color: #add8e6;
+}
+
+/* zone lattérale */
+#zoning-8 aside {
+    float: left;
+    width: 25%;
+    height: 500px;
+    background-color: #d8bfd8;
+}
+
+#zoning-8 section {
+    float: left;
+    width: 75%;
+}
+    
+/* zone principale */
+#zoning-8 .zone-a {
+    float: left;
+    width: 50%;
+    height: 200px;
+    background-color: #f5deb3;
+}
+
+#zoning-8 .zone-b {
+    float: left;
+    width: 50%;
+    height: 200px;
+    background-color:  #f5f5f5;
+}  
+
+/* zone du diaporama */
+#zoning-8 .diaporama {
+    background-color:#a3de83;
+    height: 200px;
+}
+
+/* zone section 3 */
+#zoning-8 .zone-c {
+    float: left;
+    background-color: #32ff32;
+    width: 25%;
+    height: 100px;
+}
+
+#zoning-8 .zone-d {
+    float: left;
+    background-color: #e032ff;
+    width: 25%;
+    height: 100px;
+}
+
+#zoning-8 .zone-e {
+    float: left;
+    background-color:#ffa632;
+    width: 25%;
+    height: 100px;
+}
+
+#zoning-8 .zone-f {
+    float: left;
+    background-color:#ff3265;
+    width: 25%;
+    height: 100px;
+}
+
+/* zone bas de page */
+#zoning-8 footer {
+    background-color: #0b5269;
+    /* min-height: 100px; */
+}
+
+
