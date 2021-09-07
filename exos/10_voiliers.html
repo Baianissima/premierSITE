@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>	
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content= "width=device-width, initial-scale=1.0">
+	
+	<!-- La description : phrase qui s'affiche et décrit le site dans un résultat de moteur de recherche.
+	Cette balise, parmi d'autres, sera utile au référencement naturel -->
+	<meta name="description" content="Site d'apprentissage du HTML 5 et du CSS 3 - Colombbus Suresnes 2021">
+	
+	<!-- les mots-clés, utiles pour les moteurs de recherche, bien moins utilisés de nos jours... -->		
+	<meta name="keywords" content="Premier site, Colombbus, Suresnes, l'agence Suresnes, HTML 5, CSS 3,
+	Vanusa Santos, Vanusa, intégratrice Web, développeuse Web, Colombbus Suresnes">
+
+	<!-- L'auteur de la page -->
+	<meta name="author" content="Vanusa Santos">
+			
+	<title>10_voiliers</title>
+	<!-- à compléter, feuille de style CSS, typologie etc. -->
+
+	<!-- les Google Fonts Anton, Lemonada et Oswald - link de l ensemble de polices recuperer sur le site Google Fonts et colé ici -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anton&family=Lemonada&family=Oswald&display=swap" rel="stylesheet"> 
+
+	<!-- feuille de style de MON PREMIER SITE : cette balise LINK sert à relier HTML au CSS -->
+	<link rel="stylesheet" href="..exos/css/10_voiliers.css">
+
+	<!-- nous chargeons en CDN (Content Delivery Nerwork) la typo font awesome, la version gratuite, qui comporte 1600 icônes -->
+	<!-- FontAwesomeTypos -->
+    <script src="https://kit.fontawesome.com/a1a0ce4d00.js" crossorigin="anonymous"></script>  
+</head>
+    
+<body>
+    <main>
+        <header>
+            <h1>HEADER</h1>
+        </header>
+
+        <nav>
+            <p>NAV</p>
+        </nav>
+
+    <!-- section ici parce que on met un h2, sinon on pourrait mettre des DIV partout, div dans div, div dans section etc -->
+
+        <section class="principal">
+            <h2 class="">Maman les petits bateaux</h2>
+
+            <div class="galerie">
+                <!-- debut div photo -->
+                <div class="photo">
+                    <figure>
+                        <img src="img/voiliergonet.jpg" alt="un voilier">
+                        <figcaption>Légende 1</figcaption>
+                    </figure>
+                </div>
+                <!-- fin div photo -->
+              
+                <div class="photo">
+                    <figure>
+                        <img src="img/voilierimage.jpg" alt="un voilier">
+                        <figcaption>Légende 2</figcaption>
+                    </figure>
+                </div>
+                <!-- fin div photo -->
+               
+                <div class="photo">
+                    <figure>
+                        <img src="img/voilierplaque.jpg" alt="un voilier">
+                        <figcaption>Légende 1</figcaption>
+                    </figure>
+                </div>
+                <!-- fin div photo -->
+              
+                <div class="photo">
+                    <figure>
+                        <img src="img/voiliertrinite.jpg" alt="un voilier">
+                        <figcaption>Légende 1</figcaption>
+                    </figure>
+                </div>
+                <!-- fin div photo -->
+            </div>
+            <div class="clear"></div>
+        </section>
+        <footer>
+            <p>FOOTER</p>
+        </footer>
+    </main>
+</body>
+</html>
