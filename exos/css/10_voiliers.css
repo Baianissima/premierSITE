@@ -1,11 +1,8 @@
-/* 10_voiliers */
-
-/* ICI LE RESET D ERIC MEYER = plus pousser que le RESET SIMPLE qu'on utilise sur notre site */
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
+/* debut reset simple d'Eric Meyer  */
+/* l'étoile signifie "tout" = all */
+*{
+    box-sizing: border-box;
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -15,17 +12,18 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
+    margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -35,8 +33,11 @@ footer, header, hgroup, menu, nav, section {
 /* fin du reset Eric Meyer */
 
 
-body { 
+/* fin reset simple d'Eric Meyer  */
+
+body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: 0.9em;
     margin: 0;
 }
@@ -51,8 +52,8 @@ main {
 
 /* en-tête */
 header {
-    height: 150px;
     background-color: #98bdee;
+    height: 150px;
 }
 
 /* nav */
@@ -81,8 +82,8 @@ figcaption {
 
     opacity: 0.8;
     background-color: #333;
-    height: 20px;
-    line-height: 20px;
+    /* height: 20px;
+    line-height: 20px; */
 
     font-size: 0.8rem;
     color: white;
@@ -94,7 +95,7 @@ figcaption {
 .galerie {
     /* J ai la largeur des images, et pour les centrer je cherche les marges restantes et je divise par deux ce qui mi 240px ou mi 20% */
     /* width: 60%; */
-    /* margin-left: 240px; */
+    /* margin-left: 240px; ICI 240 correspond a 20%, le WIDTH 60 ne sert pas*/
     margin-left: 20%;
 }
 
