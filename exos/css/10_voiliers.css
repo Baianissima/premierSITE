@@ -30,13 +30,13 @@ time, mark, audio, video {
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
+}
 
 /* fin du reset Eric Meyer */
 
 
-
 body { 
-    /* font-family:  */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: 0.9em;
     margin: 0;
 }
@@ -62,7 +62,8 @@ nav {
 }
 
 /* section principale */
-section {
+.section
+{
     background-color: #ebcdd2;
     height: auto;
     /* height: 250px; */
