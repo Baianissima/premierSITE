@@ -1,3 +1,6 @@
+* {
+	box-sizing: border-box;
+}
 /* ICI LE RESET D ERIC MEYER = plus pousser que le RESET SIMPLE qu'on utilise sur notre site */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
